@@ -5,7 +5,7 @@ data:extend({
     {
     type = "lab",
     name = "biolab",
-    icon = "__base-age__/graphics/icons/biolab.png",
+    icon = "__base-age-plus__/graphics/icons/biolab.png",
     minable = {mining_time = 0.5, result = "biolab"},
     subgroup = "production-machine",
     order = "z-z[z-lab]",
@@ -28,19 +28,19 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     on_animation = {
       layers = {
-        util.sprite_load("__base-age__/graphics/entity/biolab/biolab-anim",{
+        util.sprite_load("__base-age-plus__/graphics/entity/biolab/biolab-anim",{
           frame_count = 32,
           scale = 0.5,
           animation_speed = 0.2,
         }),
-        util.sprite_load("__base-age__/graphics/entity/biolab/biolab-lights",{
+        util.sprite_load("__base-age-plus__/graphics/entity/biolab/biolab-lights",{
           frame_count = 32,
           draw_as_glow = true,
           blend_mode = "additive",
           scale = 0.5,
           animation_speed = 0.2,
         }),
-        util.sprite_load("__base-age__/graphics/entity/biolab/biolab-shadow",{
+        util.sprite_load("__base-age-plus__/graphics/entity/biolab/biolab-shadow",{
           frame_count = 32,
           scale = 0.5,
           animation_speed = 0.2,
@@ -50,12 +50,12 @@ data:extend({
     },
     off_animation = {
       layers = {
-        util.sprite_load("__base-age__/graphics/entity/biolab/biolab-anim",{
+        util.sprite_load("__base-age-plus__/graphics/entity/biolab/biolab-anim",{
           frame_count = 32,
           scale = 0.5,
           animation_speed = 0.2,
         }),
-        util.sprite_load("__base-age__/graphics/entity/biolab/biolab-shadow",{
+        util.sprite_load("__base-age-plus__/graphics/entity/biolab/biolab-shadow",{
           frame_count = 32,
           scale = 0.5,
           animation_speed = 0.2,
@@ -67,13 +67,13 @@ data:extend({
     close_sound = sounds.lab_close,
     working_sound =
     {
-      sound = {filename = "__base-age__/sound/entity/biolab/biolab-loop.ogg", volume = 0.7},
+      sound = {filename = "__base-age-plus__/sound/entity/biolab/biolab-loop.ogg", volume = 0.7},
       sound_accents =
       {
-        {sound = {variations = sound_variations("__base-age__/sound/entity/spawner/spawner-respirator-push", 3, 0.3), audible_distance_modifier = 0.6}, frame = 1},
-        {sound = {variations = sound_variations("__base-age__/sound/entity/biolab/biolab-beaker", 7, 0.8), audible_distance_modifier = 0.4}, frame = 1},
-        {sound = {variations = sound_variations("__base-age__/sound/entity/biolab/biolab-centrifuge", 4, 0.7), audible_distance_modifier = 0.3}, frame = 14},
-        {sound = {variations = sound_variations("__base-age__/sound/entity/spawner/spawner-respirator-pull", 3, 0.3), audible_distance_modifier = 0.6}, frame = 17},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/spawner/spawner-respirator-push", 3, 0.3), audible_distance_modifier = 0.6}, frame = 1},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/biolab/biolab-beaker", 7, 0.8), audible_distance_modifier = 0.4}, frame = 1},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/biolab/biolab-centrifuge", 4, 0.7), audible_distance_modifier = 0.3}, frame = 14},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/spawner/spawner-respirator-pull", 3, 0.3), audible_distance_modifier = 0.6}, frame = 17},
       },
       max_sounds_per_prototype = 2,
     },
@@ -106,7 +106,7 @@ data:extend({
     {
       pictures =
       {
-          filename = "__base-age__/graphics/entity/biolab/biolab-reflection.png",
+          filename = "__base-age-plus__/graphics/entity/biolab/biolab-reflection.png",
           width = 60,
           height = 60,
           scale = 5,

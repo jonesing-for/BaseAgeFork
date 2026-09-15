@@ -5,7 +5,7 @@ data:extend({
 	{
 		type = "explosion",
 		name = "turbo-transport-belt-explosion-base",
-		icon = "__base-age__/graphics/icons/turbo-transport-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-transport-belt.png",
 		flags = { "not-on-map" },
 		hidden = true,
 		height = 0,
@@ -80,7 +80,7 @@ data:extend({
 	{
 		type = "explosion",
 		name = "turbo-transport-belt-explosion",
-		icon = "__base-age__/graphics/icons/turbo-transport-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-transport-belt.png",
 		flags = { "not-on-map" },
 		hidden = true,
 		subgroup = "belt-explosions",
@@ -105,7 +105,7 @@ data:extend({
 	{
 		type = "explosion",
 		name = "turbo-underground-belt-explosion-base",
-		icon = "__base-age__/graphics/icons/turbo-underground-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-underground-belt.png",
 		flags = { "not-on-map" },
 		hidden = true,
 		height = 0,
@@ -168,7 +168,7 @@ data:extend({
 	{
 		type = "explosion",
 		name = "turbo-underground-belt-explosion",
-		icon = "__base-age__/graphics/icons/turbo-underground-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-underground-belt.png",
 		flags = { "not-on-map" },
 		hidden = true,
 		subgroup = "belt-explosions",
@@ -193,7 +193,7 @@ data:extend({
 	{
 		type = "explosion",
 		name = "turbo-splitter-explosion",
-		icon = "__base-age__/graphics/icons/turbo-splitter.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-splitter.png",
 		flags = { "not-on-map" },
 		hidden = true,
 		subgroup = "belt-explosions",
@@ -276,7 +276,7 @@ data:extend({
 	{
     type = "explosion",
     name = "stack-inserter-explosion",
-    icon = "__base-age__/graphics/icons/stack-inserter.png",
+    icon = "__base-age-plus__/graphics/icons/stack-inserter.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "inserter-explosions",
@@ -338,7 +338,7 @@ data:extend({
   {
     type = "explosion",
     name = "foundry-explosion",
-    icon = "__base-age__/graphics/icons/foundry.png",
+    icon = "__base-age-plus__/graphics/icons/foundry.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "smelting-machine-explosions",
@@ -445,7 +445,7 @@ data:extend({
   {
     type = "explosion",
     name = "big-mining-drill-explosion",
-    icon = "__base-age__/graphics/icons/big-mining-drill.png",
+    icon = "__base-age-plus__/graphics/icons/big-mining-drill.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "extraction-machine-explosions",
@@ -522,7 +522,7 @@ data:extend({
     {
     type = "explosion",
     name = "electromagnetic-plant-explosion",
-    icon = "__base-age__/graphics/icons/electromagnetic-plant.png",
+    icon = "__base-age-plus__/graphics/icons/electromagnetic-plant.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "production-machine-explosions",
@@ -617,7 +617,7 @@ data:extend({
   {
     type = "explosion",
     name = "heating-tower-explosion",
-    icon = "__base-age__/graphics/icons/heating-tower.png",
+    icon = "__base-age-plus__/graphics/icons/heating-tower.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "energy-explosions",
@@ -733,7 +733,7 @@ data:extend({
   {
     type = "explosion",
     name = "biolab-explosion",
-    icon = "__base-age__/graphics/icons/biolab.png",
+    icon = "__base-age-plus__/graphics/icons/biolab.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "explosions",
@@ -964,7 +964,7 @@ data:extend({
   {
     type = "explosion",
     name = "cryogenic-plant-explosion",
-    icon = "__base-age__/graphics/icons/cryogenic-plant.png",
+    icon = "__base-age-plus__/graphics/icons/cryogenic-plant.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "production-machine-explosions",
@@ -1042,7 +1042,7 @@ data:extend({
   {
     type = "explosion",
     name = "fusion-reactor-explosion",
-    icon = "__base-age__/graphics/icons/fusion-reactor.png",
+    icon = "__base-age-plus__/graphics/icons/fusion-reactor.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "energy-explosions",
@@ -1120,7 +1120,7 @@ data:extend({
   {
     type = "explosion",
     name = "fusion-generator-explosion",
-    icon = "__base-age__/graphics/icons/fusion-generator.png",
+    icon = "__base-age-plus__/graphics/icons/fusion-generator.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "energy-explosions",

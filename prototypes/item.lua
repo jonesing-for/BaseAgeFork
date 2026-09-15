@@ -6,7 +6,7 @@ data:extend({
 	{
 		type = "item",
 		name = "turbo-transport-belt",
-		icon = "__base-age__/graphics/icons/turbo-transport-belt.png",
+		icon = "__base_age_plus__/graphics/icons/turbo-transport-belt.png",
 		subgroup = "belt",
 		color_hint = { text = "4" },
 		order = "a[transport-belt]-d[turbo-transport-belt]",
@@ -19,7 +19,7 @@ data:extend({
 	{
 		type = "item",
 		name = "turbo-underground-belt",
-		icon = "__base-age__/graphics/icons/turbo-underground-belt.png",
+		icon = "__base_age_plus__/graphics/icons/turbo-underground-belt.png",
 		subgroup = "belt",
 		color_hint = { text = "4" },
 		order = "b[underground-belt]-d[turbo-underground-belt]",
@@ -32,7 +32,7 @@ data:extend({
 	{
 		type = "item",
 		name = "turbo-splitter",
-		icon = "__base-age__/graphics/icons/turbo-splitter.png",
+		icon = "__base_age_plus__/graphics/icons/turbo-splitter.png",
 		subgroup = "belt",
 		color_hint = { text = "4" },
 		order = "c[splitter]-d[turbo-splitter]",
@@ -45,7 +45,7 @@ data:extend({
 	{
 		type = "item",
 		name = "turbo-loader",
-		icon = "__base-age__/graphics/icons/turbo-loader.png",
+		icon = "__base_age_plus__/graphics/icons/turbo-loader.png",
 		hidden = true,
 		subgroup = "belt",
 		color_hint = { text = "4" },
@@ -59,7 +59,7 @@ data:extend({
 	{
     	type = "item",
     	name = "stack-inserter",
-    	icon = "__base-age__/graphics/icons/stack-inserter.png",
+    	icon = "__base_age_plus__/graphics/icons/stack-inserter.png",
     	subgroup = "inserter",
     	color_hint = { text = "S" },
     	order = "h[stack-inserter]",
@@ -72,7 +72,7 @@ data:extend({
 	{
     	type = "item",
     	name = "foundry",
-    	icon = "__base-age__/graphics/icons/foundry.png",
+    	icon = "__base_age_plus__/graphics/icons/foundry.png",
     	subgroup = "smelting-machine",
     	order = "d[foundry]",
     	inventory_move_sound = item_sounds.steam_inventory_move,
@@ -84,7 +84,7 @@ data:extend({
 	{
     	type = "item",
    		name = "big-mining-drill",
-    	icon = "__base-age__/graphics/icons/big-mining-drill.png",
+    	icon = "__base_age_plus__/graphics/icons/big-mining-drill.png",
     	subgroup = "extraction-machine",
     	order = "a[items]-c[big-mining-drill]",
     	inventory_move_sound = item_sounds.drill_inventory_move,
@@ -96,7 +96,7 @@ data:extend({
 	{
     	type = "item",
     	name = "electromagnetic-plant",
-    	icon = "__base-age__/graphics/icons/electromagnetic-plant.png",
+    	icon = "__base_age_plus__/graphics/icons/electromagnetic-plant.png",
     	subgroup = "production-machine",
     	order = "g[electromagnetic-plant]",
     	inventory_move_sound = item_sounds.electric_large_inventory_move,
@@ -108,7 +108,7 @@ data:extend({
 	{
     	type = "item",
     	name = "heating-tower",
-    	icon = "__base-age__/graphics/icons/heating-tower.png",
+    	icon = "__base_age_plus__/graphics/icons/heating-tower.png",
     	subgroup = "energy",
     	order = "i[heating-tower]",
     	inventory_move_sound = item_sounds.steam_inventory_move,
@@ -120,7 +120,7 @@ data:extend({
   	{
     	type = "item",
     	name = "biolab",
-    	icon = "__base-age__/graphics/icons/biolab.png",
+    	icon = "__base_age_plus__/graphics/icons/biolab.png",
     	subgroup = "production-machine",
     	order = "z[z-biolab]",
     	inventory_move_sound = item_sounds.mechanical_inventory_move,
@@ -132,7 +132,7 @@ data:extend({
 	{
     	type = "item",
     	name = "cryogenic-plant",
-    	icon = "__base-age__/graphics/icons/cryogenic-plant.png",
+    	icon = "__base_age_plus__/graphics/icons/cryogenic-plant.png",
     	subgroup = "production-machine",
     	order = "h[cryogenic-plant]",
     	inventory_move_sound = item_sounds.mechanical_large_inventory_move,
@@ -144,7 +144,7 @@ data:extend({
 	{
     	type = "item",
     	name = "fusion-power-cell",
-    	icon = "__base-age__/graphics/icons/fusion-power-cell.png",
+    	icon = "__base_age_plus__/graphics/icons/fusion-power-cell.png",
     	subgroup = "uranium-processing",
     	order = "c[fusion-energy]-d[fusion-power-cell]",
     	inventory_move_sound = item_sounds.reactor_inventory_move,
@@ -157,7 +157,7 @@ data:extend({
   	{
     	type = "item",
     	name = "fusion-reactor",
-    	icon = "__base-age__/graphics/icons/fusion-reactor.png",
+    	icon = "__base_age_plus__/graphics/icons/fusion-reactor.png",
     	subgroup = "energy",
     	order = "g[fusion-energy]-a[reactor]",
     	inventory_move_sound = item_sounds.reactor_inventory_move,
@@ -169,7 +169,7 @@ data:extend({
   	{
     	type = "item",
     	name = "fusion-generator",
-    	icon = "__base-age__/graphics/icons/fusion-generator.png",
+    	icon = "__base_age_plus__/graphics/icons/fusion-generator.png",
     	subgroup = "energy",
     	order = "g[fusion-energy]-b[generator]",
     	inventory_move_sound = item_sounds.reactor_inventory_move,
@@ -199,7 +199,7 @@ data:extend({
 	{
     type = "armor",
     name = "mech-armor",
-    icon = "__base-age__/graphics/icons/mech-armor.png",
+    icon = "__base_age_plus__/graphics/icons/mech-armor.png",
     resistances =
     {
       {
@@ -244,17 +244,17 @@ data:extend({
     inventory_size_bonus = 50,
     --character_health_bonus = 1000, -- not implemented in current version
     provides_flight = true,
-    takeoff_sound = {filename = "__base-age__/sound/entity/mech-armor/mech-armor-takeoff.ogg", volume = 0.2, aggregation = {max_count = 2, remove = true, count_already_playing = true}},
-    landing_sound = {filename = "__base-age__/sound/entity/mech-armor/mech-armor-land.ogg", volume = 0.3, aggregation = {max_count = 2, remove = true, count_already_playing = true}},
-    flight_sound = {sound={filename = "__base-age__/sound/entity/mech-armor/mech-armor-flight.ogg", volume = 0.2}},
+    takeoff_sound = {filename = "__base_age_plus__/sound/entity/mech-armor/mech-armor-takeoff.ogg", volume = 0.2, aggregation = {max_count = 2, remove = true, count_already_playing = true}},
+    landing_sound = {filename = "__base_age_plus__/sound/entity/mech-armor/mech-armor-land.ogg", volume = 0.3, aggregation = {max_count = 2, remove = true, count_already_playing = true}},
+    flight_sound = {sound={filename = "__base_age_plus__/sound/entity/mech-armor/mech-armor-flight.ogg", volume = 0.2}},
     steps_sound = 
     {
-      variations = sound_variations("__base-age__/sound/entity/mech-armor/mech-armor-steps-metallic", 5, 0.2),
+      variations = sound_variations("__base_age_plus__/sound/entity/mech-armor/mech-armor-steps-metallic", 5, 0.2),
       advanced_volume_control = default_tile_sounds_advanced_volume_control(),
     },
     moving_sound = 
     {
-      variations = sound_variations("__base-age__/sound/entity/mech-armor/mech-armor-moves", 10, 0.4),
+      variations = sound_variations("__base_age_plus__/sound/entity/mech-armor/mech-armor-moves", 10, 0.4),
       advanced_volume_control = default_tile_sounds_advanced_volume_control(),
     },
     collision_box = {{-0.25, -0.25}, {0.25, 0.25}},
@@ -265,7 +265,7 @@ data:extend({
   {
     type = "item",
     name = "toolbelt-equipment",
-    icon = "__base-age__/graphics/icons/toolbelt-equipment.png",
+    icon = "__base_age_plus__/graphics/icons/toolbelt-equipment.png",
     place_as_equipment_result = "toolbelt-equipment",
     subgroup = "utility-equipment",
     order = "g[toolbelt]-a[night-vision-equipment]",
@@ -278,7 +278,7 @@ data:extend({
     type = "item",
     name = "battery-mk3-equipment",
     localised_description = {"item-description.battery-equipment"},
-    icon = "__base-age__/graphics/icons/battery-mk3-equipment.png",
+    icon = "__base_age_plus__/graphics/icons/battery-mk3-equipment.png",
     place_as_equipment_result = "battery-mk3-equipment",
     subgroup = "equipment",
     order = "b[battery]-c[battery-equipment-mk3]",
@@ -290,7 +290,7 @@ data:extend({
   {
     type = "item",
     name = "fusion-reactor-equipment",
-    icon = "__base-age__/graphics/icons/fusion-reactor-equipment.png",
+    icon = "__base_age_plus__/graphics/icons/fusion-reactor-equipment.png",
     place_as_equipment_result = "fusion-reactor-equipment",
     subgroup = "equipment",
     order = "a[energy-source]-c[fusion-reactor]",
@@ -299,4 +299,91 @@ data:extend({
     drop_sound = item_sounds.reactor_inventory_move,
     stack_size = 20
   },
+  {
+    type = "gun",
+    name = "teslagun",
+    icon = "__base_age_plus__/graphics/icons/teslagun.png",
+    subgroup = "gun",
+    order = "a[basic-clips]-h[teslagun]",
+    inventory_move_sound = item_sounds.weapon_large_inventory_move,
+    pick_sound = item_sounds.weapon_large_inventory_pickup,
+    drop_sound = item_sounds.weapon_large_inventory_move,
+    attack_parameters =
+    {
+      type = "beam",
+      ammo_category = "tesla",
+      cooldown = 60,
+      movement_slow_down_factor = 0.25,
+      source_offset = {0.1, -0.75},
+      source_direction_count = 8,
+      range = 24
+    },
+    -- default_import_location = "fulgora",
+    stack_size = 5
+  },
+  {
+    type = "item",
+    name = "tesla-turret",
+    icon = "__base_age_plus__/graphics/icons/tesla-turret.png",
+    subgroup = "turret",
+    order = "b[turret]-f[tesla-turret]-a[turret]",
+    inventory_move_sound = item_sounds.turret_inventory_move,
+    pick_sound = item_sounds.turret_inventory_pickup,
+    drop_sound = item_sounds.turret_inventory_move,
+    place_result = "tesla-turret",
+    stack_size = 10,
+    -- default_import_location = "fulgora",
+    weight = 100*kg
+  },
+  {
+    type = "ammo",
+    name = "tesla-ammo",
+    icon = "__base_age_plus__/graphics/icons/tesla-ammo.png",
+    ammo_category = "tesla",
+    ammo_type =
+    {
+      target_type = "entity",
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            -- Chain effect must go first in case the beam kills the target
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "direct",
+                action_delivery =
+                {
+                  type = "chain",
+                  chain = "chain-tesla-gun-chain",
+                }
+              }
+            },
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "direct",
+                action_delivery =
+                {
+                  type = "beam",
+                  beam = "chain-tesla-gun-beam-start",
+                  source_offset = {0, -1.31439 },
+                  max_length = 30,
+                  duration = 30,
+                  add_to_shooter = false,
+                  destroy_with_source_or_target = false
+                }
+              }
+            }
+          }
+        }
+      }
+	}
+  }
 })

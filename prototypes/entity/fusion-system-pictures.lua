@@ -5,12 +5,12 @@ local function reactor_pictures()
   {
     layers =
     {
-      util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-main",
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-main",
       {
         priority = "high",
         scale = 0.5
       }),
-      util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-shadow",
       {
         priority = "high",
         draw_as_shadow = true,
@@ -25,7 +25,7 @@ local function reactor_glow_pictures()
   {
     layers =
     {
-      util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-glow",
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-glow",
       {
         priority = "high",
         blend_mode = "additive",
@@ -40,7 +40,7 @@ local function reactor_connection_pictures(num, plasma_uv_shift)
 
   local shadow = nil
   if num < 7 then
-    shadow = util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num .. "-shadow",
+    shadow = util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num .. "-shadow",
     {
       priority = "high",
       draw_as_shadow = true,
@@ -54,7 +54,7 @@ local function reactor_connection_pictures(num, plasma_uv_shift)
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num,
+        util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num,
         {
           priority = "high",
           scale = 0.5,
@@ -67,7 +67,7 @@ local function reactor_connection_pictures(num, plasma_uv_shift)
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num .. "-glow",
+        util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num .. "-glow",
         {
           priority = "high",
           blend_mode = "additive",
@@ -79,7 +79,7 @@ local function reactor_connection_pictures(num, plasma_uv_shift)
     },
     fusion_effect_uv_map =
     {
-      filename = "__base-age__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num .. "-plasma-UV.png",
+      filename = "__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-connection-" .. num .. "-plasma-UV.png",
       width = 64,
       height = 64,
       shift = plasma_uv_shift,
@@ -96,13 +96,13 @@ local function generator_pictures(direction)
   {
     layers =
     {
-      util.sprite_load("__base-age__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction,
       {
         priority = "high",
         frame_count = 6,
         scale = 0.5,
       }),
-      util.sprite_load("__base-age__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. "-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. "-shadow",
       {
         priority = "high",
         draw_as_shadow = true,
@@ -123,12 +123,12 @@ local function generator_pictures_input(direction, fluid_input)
   {
     layers =
     {
-      util.sprite_load("__base-age__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string,
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string,
       {
         priority = "high",
         scale = 0.5,
       }),
-      util.sprite_load("__base-age__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string .. "-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string .. "-shadow",
       {
         priority = "high",
         draw_as_shadow = true,
@@ -144,7 +144,7 @@ local function generator_working_light(direction, fluid_input)
   if fluid_input ~= 0 then
     fluid_input_string = "-input-".. fluid_input
   end
-  local sprite = util.sprite_load("__base-age__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string .. "-glow",
+  local sprite = util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string .. "-glow",
   {
     priority = "high",
     blend_mode = "additive",
@@ -170,7 +170,7 @@ local function generator_uv_map(direction, shift, fluid_input)
     fluid_input_string = "-input-".. fluid_input
   end
   shift = shift or {0, 0}
-  return util.sprite_load("__base-age__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string .."-uv",
+  return util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/".. direction .. "/fusion-generator-" .. direction .. fluid_input_string .."-uv",
                           {
                             priority = "extra-high",
                             scale = 0.5,
@@ -187,7 +187,7 @@ return
     default_fuel_glow_color = {1,0,0.4,1},
     fusion_effect_uv_map =
     {
-      filename = "__base-age__/graphics/entity/fusion-reactor/plasma-UV.png",
+      filename = "__base-age-plus__/graphics/entity/fusion-reactor/plasma-UV.png",
       width = 384,
       height = 384,
       shift = {0,0},
@@ -299,7 +299,7 @@ return
     {
       pictures =
       {
-        filename = "__base-age__/graphics/entity/fusion-generator/fusion-generator-reflection.png",
+        filename = "__base-age-plus__/graphics/entity/fusion-generator/fusion-generator-reflection.png",
         priority = "extra-high",
         width = 40,
         height = 36,

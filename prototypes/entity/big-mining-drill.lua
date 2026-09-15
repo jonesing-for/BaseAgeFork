@@ -114,7 +114,7 @@ local function bmd_sprite_load(file_name, table)
 
   table.priority = "high"
   table.scale = 0.5
-  table.filename = "__base-age__/graphics/entity/big-mining-drill/" ..
+  table.filename = "__base-age-plus__/graphics/entity/big-mining-drill/" ..
   direction_long .. "big-mining-drill-" .. file_name
   return util.sprite_load(table.filename  ,table)
 end
@@ -554,7 +554,7 @@ data:extend(
   {
     type = "mining-drill",
     name = "big-mining-drill",
-    icon = "__base-age__/graphics/icons/big-mining-drill.png",
+    icon = "__base-age-plus__/graphics/icons/big-mining-drill.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.3, result = "big-mining-drill"},
     max_health = 300,
@@ -583,14 +583,14 @@ data:extend(
     {
       main_sounds =
       {
-        sound = {filename = "__base-age__/sound/entity/big-mining-drill/big-mining-drill-working-loop.ogg", volume = 0.3},
+        sound = {filename = "__base-age-plus__/sound/entity/big-mining-drill/big-mining-drill-working-loop.ogg", volume = 0.3},
         fade_in_ticks = 4,
         fade_out_ticks = 30
       },
       sound_accents =
       {
         {
-          sound = {filename = "__base-age__/sound/entity/big-mining-drill/big-mining-drill-start.ogg", volume = 0.75, audible_distance_modifier = 0.3},
+          sound = {filename = "__base-age-plus__/sound/entity/big-mining-drill/big-mining-drill-start.ogg", volume = 0.75, audible_distance_modifier = 0.3},
           play_for_working_visualisation = "drill-animation",
           frame = 8,
         }
@@ -601,11 +601,11 @@ data:extend(
     {
       sound =
       {
-        filename = "__base-age__/sound/entity/big-mining-drill/big-mining-drill-moving-loop.ogg", volume = 0.6,
+        filename = "__base-age-plus__/sound/entity/big-mining-drill/big-mining-drill-moving-loop.ogg", volume = 0.6,
         aggregation = {max_count = 2, remove = true, count_already_playing = true},
         audible_distance_modifier = 0.25
       },
-      stopped_sound = {filename = "__base-age__/sound/entity/big-mining-drill/big-mining-drill-moving-stop.ogg", volume = 0.4},
+      stopped_sound = {filename = "__base-age-plus__/sound/entity/big-mining-drill/big-mining-drill-moving-stop.ogg", volume = 0.4},
       minimal_sound_duration_for_stopped_sound = 33, -- at least third of the movement duration (which is drilling_frames / animation_speed)
       fade_ticks = 2
     },
@@ -613,7 +613,7 @@ data:extend(
     {
       sound =
       {
-        filename = "__base-age__/sound/entity/big-mining-drill/big-mining-drill-loop.ogg", volume = 0.7,
+        filename = "__base-age-plus__/sound/entity/big-mining-drill/big-mining-drill-loop.ogg", volume = 0.7,
         aggregation = {max_count = 2, remove = true, count_already_playing = true}
       },
       fade_ticks = 10
@@ -648,7 +648,7 @@ data:extend(
     module_slots = 4,
     radius_visualisation_picture =
     {
-      filename = "__base-age__/graphics/entity/big-mining-drill/big-mining-drill-radius-visualization.png",
+      filename = "__base-age-plus__/graphics/entity/big-mining-drill/big-mining-drill-radius-visualization.png",
       width = 10,
       height = 10
     },
@@ -660,7 +660,7 @@ data:extend(
     {
       pictures =
       {
-        filename = "__base-age__/graphics/entity/big-mining-drill/big-mining-drill-reflection.png",
+        filename = "__base-age-plus__/graphics/entity/big-mining-drill/big-mining-drill-reflection.png",
         priority = "extra-high",
         width = 48,
         height = 48,
@@ -676,7 +676,7 @@ data:extend(
     type = "corpse",
     name = "big-mining-drill-remnants",
     hidden = true,
-    icon = "__base-age__/graphics/icons/big-mining-drill.png",
+    icon = "__base-age-plus__/graphics/icons/big-mining-drill.png",
     icon_size = 64,
     flags = {"placeable-neutral", "not-on-map"},
     subgroup = "extraction-machine-remnants",
@@ -690,7 +690,7 @@ data:extend(
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet (4,
-    util.sprite_load("__base-age__/graphics/entity/big-mining-drill/remnants/big-mining-drill-remnants",
+    util.sprite_load("__base-age-plus__/graphics/entity/big-mining-drill/remnants/big-mining-drill-remnants",
     {
       scale = 0.5,
       direction_count = 1

@@ -5,7 +5,7 @@ data:extend({
     {
     type = "assembling-machine",
     name = "cryogenic-plant",
-    icon = "__base-age__/graphics/icons/cryogenic-plant.png",
+    icon = "__base-age-plus__/graphics/icons/cryogenic-plant.png",
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 0.2, result = "cryogenic-plant"},
     fast_replaceable_group = "cryogenic-plant",
@@ -36,33 +36,33 @@ data:extend({
     energy_usage = "1500kW",
     perceived_performance = {minimum = 0.25, maximum = 10},
     use_mirroring = true,
-    graphics_set = require("__base-age__.prototypes.entity.cryogenic-plant-pictures").graphics_set,
+    graphics_set = require("__base-age-plus__.prototypes.entity.cryogenic-plant-pictures").graphics_set,
     open_sound = sounds.metal_large_open,
     close_sound = sounds.metal_large_close,
     working_sound =
     {
       sound =
       {
-        filename = "__base-age__/sound/entity/cryogenic-plant/cryogenic-plant.ogg", volume = 0.8
+        filename = "__base-age-plus__/sound/entity/cryogenic-plant/cryogenic-plant.ogg", volume = 0.8
       },
       --idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.3 },
       fade_in_ticks = 4,
       fade_out_ticks = 30,
       sound_accents =
       {
-        {sound = {variations = sound_variations("__base-age__/sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.35), audible_distance_modifier = 0.8}, frame = 11},
-        {sound = {variations = sound_variations("__base-age__/sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.3), audible_distance_modifier = 0.8}, frame = 130},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim3-bubbles-rise.ogg", volume = 0.9, audible_distance_modifier = 0.3}, frame = 14},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim3-bubbles-fall.ogg", volume = 0.7, audible_distance_modifier = 0.3}, frame = 62},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim3-bubbles-rise.ogg", volume = 0.9, audible_distance_modifier = 0.3}, frame = 110},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim3-bubbles-fall.ogg", volume = 0.7, audible_distance_modifier = 0.3}, frame = 158},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim5-gears.ogg", volume = 0.25, audible_distance_modifier = 0.4}, frame = 51},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim5-gears.ogg", volume = 0.2, audible_distance_modifier = 0.4}, frame = 151},
-        {sound = {variations = sound_variations("__base-age__/sound/entity/cryogenic-plant/cp-anim6-open", 2, 0.6), audible_distance_modifier = 0.4}, frame = 3},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim6-close.ogg", volume = 0.7, audible_distance_modifier = 0.4}, frame = 33},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim6-slide-down.ogg", volume = 0.55, audible_distance_modifier = 0.4}, frame = 42},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim6-slide-up.ogg", volume = 0.6, audible_distance_modifier = 0.4}, frame = 126},
-        {sound = {filename = "__base-age__/sound/entity/cryogenic-plant/cp-anim6-slide-stop.ogg", volume = 0.4, audible_distance_modifier = 0.4}, frame = 146},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.35), audible_distance_modifier = 0.8}, frame = 11},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/cryogenic-plant/cp-smoke-mask-puff", 2, 0.3), audible_distance_modifier = 0.8}, frame = 130},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim3-bubbles-rise.ogg", volume = 0.9, audible_distance_modifier = 0.3}, frame = 14},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim3-bubbles-fall.ogg", volume = 0.7, audible_distance_modifier = 0.3}, frame = 62},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim3-bubbles-rise.ogg", volume = 0.9, audible_distance_modifier = 0.3}, frame = 110},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim3-bubbles-fall.ogg", volume = 0.7, audible_distance_modifier = 0.3}, frame = 158},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim5-gears.ogg", volume = 0.25, audible_distance_modifier = 0.4}, frame = 51},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim5-gears.ogg", volume = 0.2, audible_distance_modifier = 0.4}, frame = 151},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/cryogenic-plant/cp-anim6-open", 2, 0.6), audible_distance_modifier = 0.4}, frame = 3},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim6-close.ogg", volume = 0.7, audible_distance_modifier = 0.4}, frame = 33},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim6-slide-down.ogg", volume = 0.55, audible_distance_modifier = 0.4}, frame = 42},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim6-slide-up.ogg", volume = 0.6, audible_distance_modifier = 0.4}, frame = 126},
+        {sound = {filename = "__base-age-plus__/sound/entity/cryogenic-plant/cp-anim6-slide-stop.ogg", volume = 0.4, audible_distance_modifier = 0.4}, frame = 146},
       },
       max_sounds_per_prototype = 2
     },
@@ -76,7 +76,7 @@ data:extend({
       },
       {
         production_type = "input",
-        pipe_picture =  require("__base-age__.prototypes.entity.cryogenic-plant-pictures").pipe_picture,
+        pipe_picture =  require("__base-age-plus__.prototypes.entity.cryogenic-plant-pictures").pipe_picture,
         always_draw_covers = true, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
         pipe_covers = pipecoverspictures(),
         volume = 1000,
@@ -96,7 +96,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture =  require("__base-age__.prototypes.entity.cryogenic-plant-pictures").pipe_picture,
+        pipe_picture =  require("__base-age-plus__.prototypes.entity.cryogenic-plant-pictures").pipe_picture,
         always_draw_covers = true, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
         pipe_covers = pipecoverspictures(),
         volume = 100,
@@ -114,7 +114,7 @@ data:extend({
     {
       pictures =
       {
-          filename = "__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-reflection.png",
+          filename = "__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-reflection.png",
           width = 74,
           height = 74,
           scale = 5,

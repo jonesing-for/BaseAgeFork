@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "turbo-transport-belt",
-    icon = "__base-age__/graphics/technology/turbo-transport-belt.png",
+    icon = "__base-age-plus__/graphics/technology/turbo-transport-belt.png",
     icon_size = 256,
     effects =
     {
@@ -37,7 +37,7 @@ data:extend({
   {
     type = "technology",
     name = "stack-inserter",
-    icon = "__base-age__/graphics/technology/stack-inserter.png",
+    icon = "__base-age-plus__/graphics/technology/stack-inserter.png",
     icon_size = 256,
     effects =
     {
@@ -69,7 +69,7 @@ data:extend({
     type = "technology",
     name = "transport-belt-capacity-1",
     localised_description = {"technology-description.belt-capacity"},
-    icons = util.technology_icon_constant_stack_size("__base-age__/graphics/technology/transport-belt-capacity.png"),
+    icons = util.technology_icon_constant_stack_size("__base-age-plus__/graphics/technology/transport-belt-capacity.png"),
     effects =
     {
       {
@@ -97,7 +97,7 @@ data:extend({
     type = "technology",
     name = "transport-belt-capacity-2",
     localised_description = {"technology-description.belt-capacity"},
-    icons = util.technology_icon_constant_stack_size("__base-age__/graphics/technology/transport-belt-capacity.png"),
+    icons = util.technology_icon_constant_stack_size("__base-age-plus__/graphics/technology/transport-belt-capacity.png"),
     effects =
     {
       {
@@ -128,7 +128,7 @@ data:extend({
   {
     type = "technology",
     name = "foundry",
-    icon = "__base-age__/graphics/technology/foundry.png",
+    icon = "__base-age-plus__/graphics/technology/foundry.png",
     icon_size = 256,
     effects =
     {
@@ -202,7 +202,7 @@ data:extend({
   {
     type = "technology",
     name = "big-mining-drill",
-    icon = "__base-age__/graphics/technology/big-mining-drill.png",
+    icon = "__base-age-plus__/graphics/technology/big-mining-drill.png",
     icon_size = 256,
     effects =
     {
@@ -228,7 +228,7 @@ data:extend({
   {
     type = "technology",
     name = "electromagnetic-plant",
-    icon = "__base-age__/graphics/technology/electromagnetic-plant.png",
+    icon = "__base-age-plus__/graphics/technology/electromagnetic-plant.png",
     icon_size = 256,
     effects =
     {
@@ -254,7 +254,7 @@ data:extend({
   {
     type = "technology",
     name = "heating-tower",
-    icon = "__base-age__/graphics/technology/heating-tower.png",
+    icon = "__base-age-plus__/graphics/technology/heating-tower.png",
     icon_size = 256,
     effects =
     {
@@ -290,7 +290,7 @@ data:extend({
   {
     type = "technology",
     name = "biolab",
-    icon = "__base-age__/graphics/technology/biolab.png",
+    icon = "__base-age-plus__/graphics/technology/biolab.png",
     icon_size = 256,
     effects =
     {
@@ -319,7 +319,7 @@ data:extend({
   {
     type = "technology",
     name = "cryogenic-plant",
-    icon = "__base-age__/graphics/technology/cryogenic-plant.png",
+    icon = "__base-age-plus__/graphics/technology/cryogenic-plant.png",
     icon_size = 256,
     effects =
     {
@@ -346,7 +346,7 @@ data:extend({
   {
     type = "technology",
     name = "fusion-reactor",
-    icon = "__base-age__/graphics/technology/fusion-reactor.png",
+    icon = "__base-age-plus__/graphics/technology/fusion-reactor.png",
     icon_size = 256,
     effects =
     {
@@ -386,7 +386,7 @@ data:extend({
   {
     type = "technology",
     name = "mech-armor",
-    icon = "__base-age__/graphics/technology/mech-armor.png",
+    icon = "__base-age-plus__/graphics/technology/mech-armor.png",
     icon_size = 256,
     effects =
     {
@@ -414,7 +414,7 @@ data:extend({
   {
     type = "technology",
     name = "toolbelt-equipment",
-    icons = util.technology_icon_constant_equipment("__base-age__/graphics/technology/toolbelt-equipment.png"),
+    icons = util.technology_icon_constant_equipment("__base-age-plus__/graphics/technology/toolbelt-equipment.png"),
     prerequisites = {"utility-science-pack", "power-armor", "toolbelt", "low-density-structure"},
     effects =
     {
@@ -439,7 +439,7 @@ data:extend({
   {
     type = "technology",
     name = "battery-mk3-equipment",
-    icons = util.technology_icon_constant_equipment("__base-age__/graphics/technology/battery-mk3-equipment.png"),
+    icons = util.technology_icon_constant_equipment("__base-age-plus__/graphics/technology/battery-mk3-equipment.png"),
     prerequisites = {"battery-mk2-equipment"},
     effects =
     {
@@ -463,7 +463,7 @@ data:extend({
   {
     type = "technology",
     name = "fusion-reactor-equipment",
-    icons = util.technology_icon_constant_equipment("__base-age__/graphics/technology/fusion-reactor-equipment.png"),
+    icons = util.technology_icon_constant_equipment("__base-age-plus__/graphics/technology/fusion-reactor-equipment.png"),
     icon_size = 256,
     effects =
     {
@@ -491,7 +491,7 @@ data:extend({
   {
     type = "technology",
     name = "steel-plate-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__base-age__/graphics/technology/steel-plate-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__base-age-plus__/graphics/technology/steel-plate-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -527,7 +527,7 @@ data:extend({
   {
     type = "technology",
     name = "low-density-structure-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__base-age__/graphics/technology/low-density-structure-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__base-age-plus__/graphics/technology/low-density-structure-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -563,7 +563,7 @@ data:extend({
   {
     type = "technology",
     name = "plastic-bar-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__base-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__base-age-plus__/graphics/technology/plastics-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -594,7 +594,7 @@ data:extend({
   {
     type = "technology",
     name = "rocket-fuel-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__base-age__/graphics/technology/rocket-fuel-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__base-age-plus__/graphics/technology/rocket-fuel-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -625,7 +625,7 @@ data:extend({
   {
     type = "technology",
     name = "rocket-part-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__base-age__/graphics/technology/rocket-part-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__base-age-plus__/graphics/technology/rocket-part-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -656,7 +656,7 @@ data:extend({
   {
     type = "technology",
     name = "processing-unit-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__base-age__/graphics/technology/processing-unit-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__base-age-plus__/graphics/technology/processing-unit-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -684,4 +684,40 @@ data:extend({
     max_level = 30,
     upgrade = true
   },
+  {
+    type = "technology",
+    name = "tesla-weapons",
+    icon = "__base-age-plus__/graphics/technology/tesla-weapons.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "teslagun",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tesla-turret",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tesla-ammo",
+      },
+    },
+    prerequisites = {"military-4"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+      },
+      time = 60
+    }
+  }
 })

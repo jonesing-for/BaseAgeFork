@@ -1,12 +1,12 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
-local space_age_sounds = require ("__base-age__.prototypes.entity.sounds")
+local space_age_sounds = require ("__base-age-plus__.prototypes.entity.sounds")
 
 data:extend({
   {
     type = "assembling-machine",
     name = "electromagnetic-plant",
-    icon = "__base-age__/graphics/icons/electromagnetic-plant.png",
+    icon = "__base-age-plus__/graphics/icons/electromagnetic-plant.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "electromagnetic-plant"},
     fast_replaceable_group = "electromagnetic-plant",
@@ -32,7 +32,7 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = require("__base-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+        pipe_picture = require("__base-age-plus__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 200,
         secondary_draw_orders = { north = -1 },
@@ -40,7 +40,7 @@ data:extend({
       },
       {
         production_type = "input",
-        pipe_picture = require("__base-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+        pipe_picture = require("__base-age-plus__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 200,
         secondary_draw_orders = { north = -1 },
@@ -48,7 +48,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = require("__base-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+        pipe_picture = require("__base-age-plus__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 100,
         secondary_draw_orders = { north = -1 },
@@ -56,7 +56,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = require("__base-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+        pipe_picture = require("__base-age-plus__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 100,
         secondary_draw_orders = { north = -1 },
@@ -66,7 +66,7 @@ data:extend({
     fluid_boxes_off_when_no_fluid_recipe = true,
     perceived_performance = {minimum = 0.25, maximum = 10},
     use_mirroring = true,
-    graphics_set = require("__base-age__.prototypes.entity.electromagnetic-plant-pictures").graphics_set,
+    graphics_set = require("__base-age-plus__.prototypes.entity.electromagnetic-plant-pictures").graphics_set,
     open_sound = sounds.electric_large_open,
     close_sound = sounds.electric_large_close,
     working_sound = space_age_sounds.electromagnetic_plant,
@@ -85,7 +85,7 @@ data:extend({
       {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    water_reflection = require("__base-age__.prototypes.entity.electromagnetic-plant-pictures").water_reflection,
+    water_reflection = require("__base-age-plus__.prototypes.entity.electromagnetic-plant-pictures").water_reflection,
   },
 })
   

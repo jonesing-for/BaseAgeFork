@@ -20,7 +20,7 @@ local function mech_anim(name, table, light)
   end
   mask_table.apply_runtime_tint = true
   shadow_table.draw_as_shadow = true
-  local base_path = "__base-age__/graphics/entity/mech-armor/"
+  local base_path = "__base-age-plus__/graphics/entity/mech-armor/"
   local anim =
   {
     layers = {

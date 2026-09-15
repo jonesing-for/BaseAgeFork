@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "corpse",
 		name = "turbo-transport-belt-remnants",
-		icon = "__base-age__/graphics/icons/turbo-transport-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-transport-belt.png",
 		flags = { "placeable-neutral", "not-on-map" },
 		hidden_in_factoriopedia = true,
 		subgroup = "belt-remnants",
@@ -16,7 +16,7 @@ data:extend({
 		final_render_layer = "remnants",
 		remove_on_tile_placement = false,
 		animation = make_rotated_animation_variations_from_sheet(2,{
-			filename = "__base-age__/graphics/entity/turbo-transport-belt/remnants/turbo-transport-belt-remnants.png",
+			filename = "__base-age-plus__/graphics/entity/turbo-transport-belt/remnants/turbo-transport-belt-remnants.png",
 			line_length = 1,
 			width = 106,
 			height = 102,
@@ -28,7 +28,7 @@ data:extend({
 	{
 		type = "corpse",
 		name = "turbo-splitter-remnants",
-		icon = "__base-age__/graphics/icons/turbo-splitter.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-splitter.png",
 		flags = { "placeable-neutral", "not-on-map" },
 		hidden_in_factoriopedia = true,
 		subgroup = "belt-remnants",
@@ -42,7 +42,7 @@ data:extend({
 		final_render_layer = "remnants",
 		remove_on_tile_placement = false,
 		animation = {
-			filename = "__base-age__/graphics/entity/turbo-splitter/remnants/turbo-splitter-remnants.png",
+			filename = "__base-age-plus__/graphics/entity/turbo-splitter/remnants/turbo-splitter-remnants.png",
 			line_length = 1,
 			width = 190,
 			height = 190,
@@ -54,7 +54,7 @@ data:extend({
 	{
 		type = "corpse",
 		name = "turbo-underground-belt-remnants",
-		icon = "__base-age__/graphics/icons/turbo-underground-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-underground-belt.png",
 		flags = { "placeable-neutral", "not-on-map", "building-direction-8-way" },
 		hidden_in_factoriopedia = true,
 		subgroup = "belt-remnants",
@@ -68,7 +68,7 @@ data:extend({
 		final_render_layer = "remnants",
 		remove_on_tile_placement = false,
 		animation = {
-			filename = "__base-age__/graphics/entity/turbo-underground-belt/remnants/turbo-underground-belt-remnants.png",
+			filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/remnants/turbo-underground-belt-remnants.png",
 			line_length = 1,
 			width = 156,
 			height = 144,
@@ -80,7 +80,7 @@ data:extend({
 	{
     	type = "corpse",
     	name = "stack-inserter-remnants",
-    	icon = "__base-age__/graphics/icons/stack-inserter.png",
+    	icon = "__base-age-plus__/graphics/icons/stack-inserter.png",
     	flags = {"placeable-neutral", "not-on-map"},
     	hidden_in_factoriopedia = true,
     	subgroup = "inserter-remnants",
@@ -94,7 +94,7 @@ data:extend({
     	final_render_layer = "remnants",
     	remove_on_tile_placement = false,
     	animation = make_rotated_animation_variations_from_sheet (4,{
-      		filename = "__base-age__/graphics/entity/stack-inserter/remnants/stack-inserter-remnants.png",
+      		filename = "__base-age-plus__/graphics/entity/stack-inserter/remnants/stack-inserter-remnants.png",
       		line_length = 1,
       		width = 132,
       		height = 96,
@@ -106,7 +106,7 @@ data:extend({
 	{
     	type = "corpse",
     	name = "foundry-remnants",
-    	icon = "__base-age__/graphics/icons/foundry.png",
+    	icon = "__base-age-plus__/graphics/icons/foundry.png",
     	flags = {"placeable-neutral", "not-on-map"},
     	hidden_in_factoriopedia = true,
     	subgroup = "smelting-machine-remnants",
@@ -120,7 +120,7 @@ data:extend({
     	final_render_layer = "remnants",
     	remove_on_tile_placement = false,
     	animation = {
-      		filename = "__base-age__/graphics/entity/foundry/foundry-remnants.png",
+      		filename = "__base-age-plus__/graphics/entity/foundry/foundry-remnants.png",
       		line_length = 1,
       		width = 494,
       		height = 478,
@@ -129,7 +129,7 @@ data:extend({
       		{
     type = "corpse",
     name = "foundry-remnants",
-    icon = "__base-age__/graphics/icons/foundry.png",
+    icon = "__base-age-plus__/graphics/icons/foundry.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "smelting-machine-remnants",
@@ -144,7 +144,7 @@ data:extend({
     remove_on_tile_placement = false,
     animation =
     {
-      filename = "__base-age__/graphics/entity/foundry/foundry-remnants.png",
+      filename = "__base-age-plus__/graphics/entity/foundry/foundry-remnants.png",
       line_length = 1,
       width = 494,
       height = 478,
@@ -160,7 +160,7 @@ data:extend({
 	{
     type = "corpse",
     name = "electromagnetic-plant-remnants",
-    icon = "__base-age__/graphics/icons/electromagnetic-plant.png",
+    icon = "__base-age-plus__/graphics/icons/electromagnetic-plant.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "production-machine-remnants",
@@ -175,7 +175,7 @@ data:extend({
     remove_on_tile_placement = false,
     animation =
     {
-      util.sprite_load("__base-age__/graphics/entity/electromagnetic-plant/remnants/electromagnetic-plant-remnants",
+      util.sprite_load("__base-age-plus__/graphics/entity/electromagnetic-plant/remnants/electromagnetic-plant-remnants",
       {
         frame_count = 1,
         direction_count = 1,
@@ -187,7 +187,7 @@ data:extend({
   {
     type = "corpse",
     name = "heating-tower-remnants",
-    icon = "__base-age__/graphics/icons/heating-tower.png",
+    icon = "__base-age-plus__/graphics/icons/heating-tower.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "energy-remnants",
@@ -200,7 +200,7 @@ data:extend({
     expires = false,
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
-    animation = util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-remnants",{
+    animation = util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-remnants",{
       scale = 0.5,
       direction_count = 1
     })
@@ -208,7 +208,7 @@ data:extend({
   {
     type = "corpse",
     name = "biolab-remnants",
-    icon = "__base-age__/graphics/icons/biolab.png",
+    icon = "__base-age-plus__/graphics/icons/biolab.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "remnants",
@@ -221,7 +221,7 @@ data:extend({
     expires = false,
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
-    animation = util.sprite_load("__base-age__/graphics/entity/biolab/biolab-remnants",
+    animation = util.sprite_load("__base-age-plus__/graphics/entity/biolab/biolab-remnants",
     {
       scale = 0.5,
       direction_count = 1
@@ -230,7 +230,7 @@ data:extend({
   {
     type = "corpse",
     name = "cryogenic-plant-remnants",
-    icon = "__base-age__/graphics/icons/cryogenic-plant.png",
+    icon = "__base-age-plus__/graphics/icons/cryogenic-plant.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "production-machine-remnants",
@@ -243,7 +243,7 @@ data:extend({
     expires = false,
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
-    animation = util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/remnants/cryogenic-plant-remnants",{
+    animation = util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/remnants/cryogenic-plant-remnants",{
       scale = 0.5,
       direction_count = 1
     })
@@ -251,7 +251,7 @@ data:extend({
   {
     type = "corpse",
     name = "fusion-reactor-remnants",
-    icon = "__base-age__/graphics/icons/fusion-reactor.png",
+    icon = "__base-age-plus__/graphics/icons/fusion-reactor.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "energy-remnants",
@@ -264,7 +264,7 @@ data:extend({
     expires = false,
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
-    animation = util.sprite_load("__base-age__/graphics/entity/fusion-reactor/fusion-reactor-remnants",{
+    animation = util.sprite_load("__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-remnants",{
       scale = 0.5,
       direction_count = 1
     })
@@ -272,7 +272,7 @@ data:extend({
   {
     type = "corpse",
     name = "fusion-generator-remnants",
-    icon = "__base-age__/graphics/icons/fusion-generator.png",
+    icon = "__base-age-plus__/graphics/icons/fusion-generator.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "energy-remnants",
@@ -285,7 +285,7 @@ data:extend({
     expires = false,
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
-    animation = util.sprite_load("__base-age__/graphics/entity/fusion-generator/fusion-generator-remnants",
+    animation = util.sprite_load("__base-age-plus__/graphics/entity/fusion-generator/fusion-generator-remnants",
     {
       scale = 0.5,
       direction_count = 4
