@@ -7,7 +7,7 @@ data:extend({
   {
     type = "inserter",
     name = "stack-inserter",
-    icon = "__base-age__/graphics/icons/stack-inserter.png",
+    icon = "__base-age-plus__/graphics/icons/stack-inserter.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     stack_size_bonus = 4,
     bulk = true,
@@ -50,7 +50,7 @@ data:extend({
     working_sound = sounds.inserter_fast,
     hand_base_picture =
     {
-      filename = "__base-age__/graphics/entity/stack-inserter/stack-inserter-hand-base.png",
+      filename = "__base-age-plus__/graphics/entity/stack-inserter/stack-inserter-hand-base.png",
       priority = "extra-high",
       width = 32,
       height = 136,
@@ -58,7 +58,7 @@ data:extend({
     },
     hand_closed_picture =
     {
-      filename = "__base-age__/graphics/entity/stack-inserter/stack-inserter-hand-closed.png",
+      filename = "__base-age-plus__/graphics/entity/stack-inserter/stack-inserter-hand-closed.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -66,7 +66,7 @@ data:extend({
     },
     hand_open_picture =
     {
-      filename = "__base-age__/graphics/entity/stack-inserter/stack-inserter-hand-open.png",
+      filename = "__base-age-plus__/graphics/entity/stack-inserter/stack-inserter-hand-open.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -82,7 +82,7 @@ data:extend({
     },
     hand_closed_shadow =
     {
-      filename = "__base-age__/graphics/entity/stack-inserter/stack-inserter-hand-closed-shadow.png",
+      filename = "__base-age-plus__/graphics/entity/stack-inserter/stack-inserter-hand-closed-shadow.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -90,7 +90,7 @@ data:extend({
     },
     hand_open_shadow =
     {
-      filename = "__base-age__/graphics/entity/stack-inserter/stack-inserter-hand-open-shadow.png",
+      filename = "__base-age-plus__/graphics/entity/stack-inserter/stack-inserter-hand-open-shadow.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -100,7 +100,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__base-age__/graphics/entity/stack-inserter/stack-inserter-platform.png",
+        filename = "__base-age-plus__/graphics/entity/stack-inserter/stack-inserter-platform.png",
         priority = "extra-high",
         width = 105,
         height = 79,

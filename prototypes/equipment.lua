@@ -4,7 +4,7 @@ data:extend({
     name = "toolbelt-equipment",
     sprite =
     {
-      filename = "__base-age__/graphics/equipment/toolbelt-equipment.png",
+      filename = "__base-age-plus__/graphics/equipment/toolbelt-equipment.png",
       width = 192,
       height = 64,
       priority = "medium",
@@ -24,7 +24,7 @@ data:extend({
     name = "battery-mk3-equipment",
     sprite =
     {
-      filename = "__base-age__/graphics/equipment/battery-mk3-equipment.png",
+      filename = "__base-age-plus__/graphics/equipment/battery-mk3-equipment.png",
       width = 64,
       height = 144,
       priority = "medium",
@@ -49,7 +49,7 @@ data:extend({
     name = "fusion-reactor-equipment",
     sprite =
     {
-      filename = "__base-age__/graphics/equipment/fusion-reactor-equipment.png",
+      filename = "__base-age-plus__/graphics/equipment/fusion-reactor-equipment.png",
       width = 256,
       height = 256,
       priority = "medium",

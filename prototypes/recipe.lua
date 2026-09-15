@@ -88,7 +88,7 @@ data:extend({
     type = "recipe",
     name = "iron-ore-melting",
     localised_name = {"recipe-name.iron-ore-melting"},
-    icon = "__base-age__/graphics/icons/iron-ore-melting.png",
+    icon = "__base-age-plus__/graphics/icons/iron-ore-melting.png",
     categories = {"metallurgy"},
     order = "a[melting]-b[iron-ore-melting]",
     auto_recycle = false,
@@ -111,7 +111,7 @@ data:extend({
     type = "recipe",
     name = "copper-ore-melting",
     localised_name = {"recipe-name.copper-ore-melting"},
-    icon = "__base-age__/graphics/icons/copper-ore-melting.png",
+    icon = "__base-age-plus__/graphics/icons/copper-ore-melting.png",
     categories = {"metallurgy"},
     order = "a[melting]-c[copper-ore-melting]",
     auto_recycle = false,
@@ -135,7 +135,7 @@ data:extend({
     name = "casting-iron",
     categories = {"metallurgy"},
     order = "b[casting]-a[casting-iron]",
-    icon = "__base-age__/graphics/icons/casting-iron.png",
+    icon = "__base-age-plus__/graphics/icons/casting-iron.png",
     enabled = false,
     ingredients =
     {
@@ -152,7 +152,7 @@ data:extend({
     name = "casting-steel",
     categories = {"metallurgy"},
     order = "b[casting]-c[casting-steel]",
-    icon = "__base-age__/graphics/icons/casting-steel.png",
+    icon = "__base-age-plus__/graphics/icons/casting-steel.png",
     enabled = false,
     ingredients =
     {
@@ -169,7 +169,7 @@ data:extend({
     name = "casting-copper",
     categories = {"metallurgy"},
     order = "b[casting]-b[casting-copper]",
-    icon = "__base-age__/graphics/icons/casting-copper.png",
+    icon = "__base-age-plus__/graphics/icons/casting-copper.png",
     enabled = false,
     ingredients =
     {
@@ -187,7 +187,7 @@ data:extend({
     name = "casting-iron-gear-wheel",
     categories = {"metallurgy"},
     order = "b[casting]-d[casting-iron-gear-wheel]",
-    icon = "__base-age__/graphics/icons/casting-iron-gear-wheel.png",
+    icon = "__base-age-plus__/graphics/icons/casting-iron-gear-wheel.png",
     enabled = false,
     ingredients =
     {
@@ -204,7 +204,7 @@ data:extend({
     name = "casting-iron-stick",
     categories = {"metallurgy"},
     order = "b[casting]-e[casting-iron-stick]",
-    icon = "__base-age__/graphics/icons/casting-iron-stick.png",
+    icon = "__base-age-plus__/graphics/icons/casting-iron-stick.png",
     enabled = false,
     ingredients =
     {
@@ -222,7 +222,7 @@ data:extend({
     categories = {"metallurgy"},
     subgroup = "energy-pipe-distribution",
     order = "b[casting]-f[casting-pipe]",
-    icon = "__base-age__/graphics/icons/casting-pipe.png",
+    icon = "__base-age-plus__/graphics/icons/casting-pipe.png",
     enabled = false,
     ingredients =
     {
@@ -240,7 +240,7 @@ data:extend({
     categories = {"metallurgy"},
     subgroup = "energy-pipe-distribution",
     order = "b[casting]-g[casting-pipe-to-ground]",
-    icon = "__base-age__/graphics/icons/casting-pipe-to-ground.png",
+    icon = "__base-age-plus__/graphics/icons/casting-pipe-to-ground.png",
     enabled = false,
     ingredients =
     {
@@ -258,7 +258,7 @@ data:extend({
     name = "casting-low-density-structure",
     categories = {"metallurgy"},
     order = "b[casting]-f[low-density-structure]",
-    icon = "__base-age__/graphics/icons/casting-low-density-structure.png",
+    icon = "__base-age-plus__/graphics/icons/casting-low-density-structure.png",
     enabled = false,
     ingredients =
     {
@@ -277,7 +277,7 @@ data:extend({
     name = "concrete-from-molten-iron",
     categories = {"metallurgy"},
     order = "b[casting]-g[concrete]",
-    icon = "__base-age__/graphics/icons/concrete-from-molten-iron.png",
+    icon = "__base-age-plus__/graphics/icons/concrete-from-molten-iron.png",
     enabled = false,
     ingredients =
     {
@@ -296,7 +296,7 @@ data:extend({
     name = "casting-copper-cable",
     categories = {"metallurgy"},
     order = "b[casting]-h[casting-copper-cable]",
-    icon = "__base-age__/graphics/icons/casting-copper-cable.png",
+    icon = "__base-age-plus__/graphics/icons/casting-copper-cable.png",
     enabled = false,
     ingredients =
     {

@@ -48,7 +48,7 @@ local function cryogenic_plant_animation(name, frames, options)
   options['frame_count'] = frames
   options['repeat_count'] = total_frame_count / frames
   options['scale'] = 0.5
-  return util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-".. name, options)
+  return util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-".. name, options)
 end
 
 return {
@@ -167,13 +167,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {0, 3}
         }),
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -186,13 +186,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {-3, 0}
         }),
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -205,13 +205,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-v",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {0, -3}
         }),
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-v",
         {
           priority = "extra-high",
           draw_as_shadow = true,
@@ -224,13 +224,13 @@ return {
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-pipe-connections-h",
         {
           priority = "extra-high",
           scale = 0.5,
           shift = {3, 0}
         }),
-        util.sprite_load("__base-age__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
+        util.sprite_load("__base-age-plus__/graphics/entity/cryogenic-plant/cryogenic-plant-shadow-h",
         {
           priority = "extra-high",
           draw_as_shadow = true,

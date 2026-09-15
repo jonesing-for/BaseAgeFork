@@ -6,7 +6,7 @@ data:extend({
     type = "fusion-generator",
     name = "fusion-generator",
     factoriopedia_description = {"factoriopedia-description.fusion-generator"},
-    icon = "__base-age__/graphics/icons/fusion-generator.png",
+    icon = "__base-age-plus__/graphics/icons/fusion-generator.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "fusion-generator"},
     max_health = 1000,
@@ -25,12 +25,12 @@ data:extend({
     selection_box = {{-1.5, -2.5}, {1.5, 2.5}},
     damaged_trigger_effect = hit_effects.entity(),
     fast_replaceable_group = "fusion-generator",
-    graphics_set = require ("__base-age__.prototypes.entity.fusion-system-pictures").generator_graphics_set,
+    graphics_set = require ("__base-age-plus__.prototypes.entity.fusion-system-pictures").generator_graphics_set,
     working_sound =
     {
       sound =
       {
-        filename = "__base-age__/sound/entity/fusion/fusion-generator.ogg",
+        filename = "__base-age-plus__/sound/entity/fusion/fusion-generator.ogg",
         volume = 0.15,
         speed_smoothing_window_size = 60,
         advanced_volume_control = {attenuation = "exponential"},
@@ -90,7 +90,7 @@ data:extend({
     type = "fusion-reactor",
     name = "fusion-reactor",
     factoriopedia_description = {"factoriopedia-description.fusion-reactor"},
-    icon = "__base-age__/graphics/icons/fusion-reactor.png",
+    icon = "__base-age-plus__/graphics/icons/fusion-reactor.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "fusion-reactor"},
     max_health = 1000,
@@ -125,10 +125,10 @@ data:extend({
     },
 
     two_direction_only = true,
-    graphics_set = require ("__base-age__.prototypes.entity.fusion-system-pictures").reactor_graphics_set,
+    graphics_set = require ("__base-age-plus__.prototypes.entity.fusion-system-pictures").reactor_graphics_set,
     working_sound =
     {
-      sound = {filename = "__base-age__/sound/entity/fusion/fusion-reactor.ogg", volume = 0.6, modifiers = volume_multiplier("main-menu", 1.44)},
+      sound = {filename = "__base-age-plus__/sound/entity/fusion/fusion-reactor.ogg", volume = 0.6, modifiers = volume_multiplier("main-menu", 1.44)},
       use_doppler_shift = false,
       match_volume_to_activity = true,
       max_sounds_per_prototype = 2,
@@ -193,7 +193,7 @@ data:extend({
     {
       pictures =
       {
-          filename = "__base-age__/graphics/entity/fusion-reactor/fusion-reactor-reflection.png",
+          filename = "__base-age-plus__/graphics/entity/fusion-reactor/fusion-reactor-reflection.png",
           width = 74,
           height = 74,
           scale = 5,

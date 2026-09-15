@@ -2,7 +2,7 @@ data:extend({
     {
         type = "fluid",
         name = "molten-iron",
-        icon = "__base-age__/graphics/icons/fluid/molten-iron.png",
+        icon = "__base-age-plus__/graphics/icons/fluid/molten-iron.png",
         subgroup = "fluid",
         order = "b[new-fluid]-a[molten-iron]",
         default_temperature = 1500,
@@ -14,7 +14,7 @@ data:extend({
     {
         type = "fluid",
         name = "molten-copper",
-        icon = "__base-age__/graphics/icons/fluid/molten-copper.png",
+        icon = "__base-age-plus__/graphics/icons/fluid/molten-copper.png",
         subgroup = "fluid",
         order = "b[new-fluid]-b[molten-copper]",
         default_temperature = 1100,
@@ -26,7 +26,7 @@ data:extend({
     {
         type = "fluid",
         name = "fusion-plasma",
-        icon = "__base-age__/graphics/icons/fluid/fusion-plasma.png",
+        icon = "__base-age-plus__/graphics/icons/fluid/fusion-plasma.png",
         subgroup = "fluid",
         order = "b[new-fluid]-e[aquilo]-g[fusion-plasma]",
         default_temperature = 1000000,

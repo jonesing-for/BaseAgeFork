@@ -16,7 +16,7 @@ local simulations = {
 local tungsten_belt_animation_set = {
 	alternate = true,
 	animation_set = {
-		filename = "__base-age__/graphics/entity/turbo-transport-belt/turbo-transport-belt.png",
+		filename = "__base-age-plus__/graphics/entity/turbo-transport-belt/turbo-transport-belt.png",
 		priority = "extra-high",
 		size = 128,
 		scale = 0.5,
@@ -35,7 +35,7 @@ data:extend({
 	{
 		type = "transport-belt",
 		name = "turbo-transport-belt",
-		icon = "__base-age__/graphics/icons/turbo-transport-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-transport-belt.png",
 		flags = { "placeable-neutral", "player-creation" },
 		minable = { mining_time = 0.1, result = "turbo-transport-belt" },
 		max_health = 170,
@@ -69,7 +69,7 @@ data:extend({
 	{
 		type = "underground-belt",
 		name = "turbo-underground-belt",
-		icon = "__base-age__/graphics/icons/turbo-underground-belt.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-underground-belt.png",
 		flags = { "placeable-neutral", "player-creation" },
 		minable = { mining_time = 0.1, result = "turbo-underground-belt" },
 		max_health = 170,
@@ -125,7 +125,7 @@ data:extend({
 		structure = {
 			direction_in = {
 				sheet = {
-					filename = "__base-age__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
+					filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -135,7 +135,7 @@ data:extend({
 			},
 			direction_out = {
 				sheet = {
-					filename = "__base-age__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
+					filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -144,7 +144,7 @@ data:extend({
 			},
 			direction_in_side_loading = {
 				sheet = {
-					filename = "__base-age__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
+					filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -154,7 +154,7 @@ data:extend({
 			},
 			direction_out_side_loading = {
 				sheet = {
-					filename = "__base-age__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
+					filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -164,7 +164,7 @@ data:extend({
 			},
 			back_patch = {
 				sheet = {
-					filename = "__base-age__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure-back-patch.png",
+					filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure-back-patch.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -173,7 +173,7 @@ data:extend({
 			},
 			front_patch = {
 				sheet = {
-					filename = "__base-age__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure-front-patch.png",
+					filename = "__base-age-plus__/graphics/entity/turbo-underground-belt/turbo-underground-belt-structure-front-patch.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -185,7 +185,7 @@ data:extend({
 	{
 		type = "splitter",
 		name = "turbo-splitter",
-		icon = "__base-age__/graphics/icons/turbo-splitter.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-splitter.png",
 		flags = { "placeable-neutral", "player-creation" },
 		minable = { mining_time = 0.1, result = "turbo-splitter" },
 		max_health = 190,
@@ -212,22 +212,22 @@ data:extend({
 		open_sound = sounds.machine_open,
 		close_sound = sounds.machine_close,
 		structure = {
-			north = util.sprite_load("__base-age__/graphics/entity/turbo-splitter/turbo-splitter-north", {
+			north = util.sprite_load("__base-age-plus__/graphics/entity/turbo-splitter/turbo-splitter-north", {
 				frame_count = 32,
 				priority = "extra-high",
 				scale = 0.5,
 			}),
-			east = util.sprite_load("__base-age__/graphics/entity/turbo-splitter/turbo-splitter-east", {
+			east = util.sprite_load("__base-age-plus__/graphics/entity/turbo-splitter/turbo-splitter-east", {
 				frame_count = 32,
 				priority = "extra-high",
 				scale = 0.5,
 			}),
-			south = util.sprite_load("__base-age__/graphics/entity/turbo-splitter/turbo-splitter-south", {
+			south = util.sprite_load("__base-age-plus__/graphics/entity/turbo-splitter/turbo-splitter-south", {
 				frame_count = 32,
 				priority = "extra-high",
 				scale = 0.5,
 			}),
-			west = util.sprite_load("__base-age__/graphics/entity/turbo-splitter/turbo-splitter-west", {
+			west = util.sprite_load("__base-age-plus__/graphics/entity/turbo-splitter/turbo-splitter-west", {
 				frame_count = 32,
 				priority = "extra-high",
 				scale = 0.5,
@@ -236,7 +236,7 @@ data:extend({
 		structure_patch = {
 			north = util.empty_sprite(),
 			east = util.sprite_load(
-				"__base-age__/graphics/entity/turbo-splitter/turbo-splitter-east-top_patch",
+				"__base-age-plus__/graphics/entity/turbo-splitter/turbo-splitter-east-top_patch",
 				{
 					frame_count = 32,
 					priority = "extra-high",
@@ -245,7 +245,7 @@ data:extend({
 			),
 			south = util.empty_sprite(),
 			west = util.sprite_load(
-				"__base-age__/graphics/entity/turbo-splitter/turbo-splitter-west-top_patch",
+				"__base-age-plus__/graphics/entity/turbo-splitter/turbo-splitter-west-top_patch",
 				{
 					frame_count = 32,
 					priority = "extra-high",
@@ -275,7 +275,7 @@ data:extend({
 	{
 		type = "loader",
 		name = "turbo-loader",
-		icon = "__base-age__/graphics/icons/turbo-loader.png",
+		icon = "__base-age-plus__/graphics/icons/turbo-loader.png",
 		flags = { "placeable-neutral", "player-creation" },
 		hidden = true,
 		minable = { mining_time = 0.1, result = "turbo-loader" },

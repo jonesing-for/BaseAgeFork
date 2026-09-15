@@ -5,7 +5,7 @@ data:extend({
     {
     type = "reactor",
     name = "heating-tower",
-    icon  = "__base-age__/graphics/icons/heating-tower.png",
+    icon  = "__base-age-plus__/graphics/icons/heating-tower.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "heating-tower"},
     max_health = 500,
@@ -38,10 +38,10 @@ data:extend({
     {
       layers =
       {
-        util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-main", {
+        util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-main", {
          scale = 0.5
         }),
-        util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-shadow", {
+        util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-shadow", {
           scale = 0.5,
           draw_as_shadow = true
         })
@@ -51,14 +51,14 @@ data:extend({
     working_light_picture =
     {
       layers = {
-        util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-working-fire", {
+        util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-working-fire", {
           frame_count = 24,
           scale = 0.5,
           blend_mode = "additive",
           draw_as_glow = true,
           animation_speed = 0.333
         }),
-        util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-working-light", {
+        util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-working-light", {
           frame_count = 1,
           repeat_count = 24,
           scale = 0.5,
@@ -95,7 +95,7 @@ data:extend({
       },
 
     heat_picture = apply_heat_pipe_glow(
-      util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-glow", {
+      util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-glow", {
         scale = 0.5,
         blend_mode = "additive"
       }))
@@ -103,7 +103,7 @@ data:extend({
 
     connection_patches_connected =
     {
-      sheet = util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-pipes", {
+      sheet = util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-pipes", {
         scale = 0.5,
         variation_count = 4
       })
@@ -111,7 +111,7 @@ data:extend({
 
     connection_patches_disconnected =
     {
-      sheet = util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-pipes-disconnected", {
+      sheet = util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-pipes-disconnected", {
         scale = 0.5,
         variation_count = 4
       })
@@ -120,7 +120,7 @@ data:extend({
     heat_connection_patches_connected =
     {
       sheet = apply_heat_pipe_glow(
-        util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-pipes-heat", {
+        util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-pipes-heat", {
         scale = 0.5,
         variation_count = 4
       }))
@@ -129,7 +129,7 @@ data:extend({
     heat_connection_patches_disconnected =
     {
       sheet = apply_heat_pipe_glow(
-        util.sprite_load("__base-age__/graphics/entity/heating-tower/heating-tower-pipes-heat-disconnected", {
+        util.sprite_load("__base-age-plus__/graphics/entity/heating-tower/heating-tower-pipes-heat-disconnected", {
         scale = 0.5,
         variation_count = 4
       }))
@@ -139,7 +139,7 @@ data:extend({
     close_sound = sounds.steam_close,
     working_sound =
     {
-      sound = {filename = "__base-age__/sound/entity//heating-tower/heating-tower-loop.ogg", volume = 0.5},
+      sound = {filename = "__base-age-plus__/sound/entity//heating-tower/heating-tower-loop.ogg", volume = 0.5},
       max_sounds_per_prototype = 2,
       fade_in_ticks = 4,
       fade_out_ticks = 20
@@ -152,7 +152,7 @@ data:extend({
     {
       pictures =
       {
-          filename = "__base-age__/graphics/entity/heating-tower/heating-tower-reflection.png",
+          filename = "__base-age-plus__/graphics/entity/heating-tower/heating-tower-reflection.png",
           width = 60,
           height = 60,
           scale = 5,
