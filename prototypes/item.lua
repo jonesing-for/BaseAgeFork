@@ -299,4 +299,91 @@ data:extend({
     drop_sound = item_sounds.reactor_inventory_move,
     stack_size = 20
   },
+  {
+    type = "gun",
+    name = "teslagun",
+    icon = "__base_age_plus__/graphics/icons/teslagun.png",
+    subgroup = "gun",
+    order = "a[basic-clips]-h[teslagun]",
+    inventory_move_sound = item_sounds.weapon_large_inventory_move,
+    pick_sound = item_sounds.weapon_large_inventory_pickup,
+    drop_sound = item_sounds.weapon_large_inventory_move,
+    attack_parameters =
+    {
+      type = "beam",
+      ammo_category = "tesla",
+      cooldown = 60,
+      movement_slow_down_factor = 0.25,
+      source_offset = {0.1, -0.75},
+      source_direction_count = 8,
+      range = 24
+    },
+    -- default_import_location = "fulgora",
+    stack_size = 5
+  },
+  {
+    type = "item",
+    name = "tesla-turret",
+    icon = "__base_age_plus__/graphics/icons/tesla-turret.png",
+    subgroup = "turret",
+    order = "b[turret]-f[tesla-turret]-a[turret]",
+    inventory_move_sound = item_sounds.turret_inventory_move,
+    pick_sound = item_sounds.turret_inventory_pickup,
+    drop_sound = item_sounds.turret_inventory_move,
+    place_result = "tesla-turret",
+    stack_size = 10,
+    -- default_import_location = "fulgora",
+    weight = 100*kg
+  },
+  {
+    type = "ammo",
+    name = "tesla-ammo",
+    icon = "__base_age_plus__/graphics/icons/tesla-ammo.png",
+    ammo_category = "tesla",
+    ammo_type =
+    {
+      target_type = "entity",
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            -- Chain effect must go first in case the beam kills the target
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "direct",
+                action_delivery =
+                {
+                  type = "chain",
+                  chain = "chain-tesla-gun-chain",
+                }
+              }
+            },
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "direct",
+                action_delivery =
+                {
+                  type = "beam",
+                  beam = "chain-tesla-gun-beam-start",
+                  source_offset = {0, -1.31439 },
+                  max_length = 30,
+                  duration = 30,
+                  add_to_shooter = false,
+                  destroy_with_source_or_target = false
+                }
+              }
+            }
+          }
+        }
+      }
+	}
+  }
 })
