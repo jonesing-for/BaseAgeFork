@@ -1194,5 +1194,79 @@ data:extend({
         }
       }
     }
-  }
+  },
+  {
+    type = "explosion",
+    name = "tesla-turret-explosion",
+    icon = "__base-age-plus__/graphics/icons/tesla-turret.png",
+    flags = {"not-on-map"},
+    hidden = true,
+    subgroup = "defensive-structure-explosions",
+    order = "d-e-f",
+    height = 0,
+    animations = explosion_animations.big_explosion(),
+    smoke = "smoke-fast",
+    smoke_count = 6,
+    smoke_slow_down_factor = 1,
+    sound = sounds.small_explosion,
+    created_effect =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "create-particle",
+            repeat_count = 32,
+            particle_name = "tesla-turret-metal-particle-big",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.1,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.04,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 40,
+            particle_name = "tesla-turret-metal-particle-medium",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.1,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.05,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 25,
+            particle_name = "tesla-turret-metal-particle-small",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.11,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.03,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 18,
+            particle_name = "cable-and-electronics-particle-small-medium",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.11,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.03,
+            speed_from_center_deviation = 0.05
+          }
+        }
+      }
+    }
+  },
 })

@@ -541,4 +541,53 @@ data:extend({
       quaternary = {r = 0.945, g = 0.370, b = 1.000, a = 1.000}, -- #f15effff
     }
   },
+  {
+    type = "recipe",
+    name = "teslagun",
+    categories = {"electromagnetics"},
+    energy_required = 30,
+    ingredients =
+    {
+      {type = "item", name = "copper-plate", amount = 10},
+      {type = "item", name = "battery-mk2-equipment", amount = 5},
+      {type = "item", name = "plastic-bar", amount = 30},
+	    {type = "item", name = "steel-plate", amount = 10},
+	   -- {type = "fluid", name = "electrolyte", amount = 100},
+    },
+    results = {{type="item", name="teslagun", amount=1}},
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "tesla-turret",
+    categories = {"electromagnetics"},
+    energy_required = 30,
+    ingredients =
+    {
+      {type = "item", name = "teslagun", amount = 1},
+	    {type = "item", name = "accumulator", amount = 10},
+      --{type = "item", name = "supercapacitor", amount = 10},
+      {type = "item", name = "processing-unit", amount = 10},
+      --{type = "item", name = "superconductor", amount = 50},
+	    {type = "item", name = "steel-plate", amount = 10},
+      --{type = "fluid", name = "electrolyte", amount = 500},
+    },
+    results = {{type="item", name="tesla-turret", amount=1}},
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "tesla-ammo",
+    categories = {"electromagnetics"},
+    energy_required = 30,
+    ingredients =
+    {
+      --{type = "item", name = "supercapacitor", amount = 1},
+	  {type = "item", name = "battery-equipment", amount = 10},
+      {type = "item", name = "plastic-bar", amount = 1},
+      --{type = "fluid", name = "electrolyte", amount = 10},
+    },
+    results = {{type="item", name="tesla-ammo", amount=1}},
+    enabled = false
+  },
 })

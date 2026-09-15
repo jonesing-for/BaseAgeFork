@@ -1,0 +1,15 @@
+{
+  "item":
+  [
+    ["tesla-tower", "tesla-turret"]
+  ],
+  "recipe":
+  [
+    ["tesla-tower", "tesla-turret"],
+    ["tesla-tower-recycling", "tesla-turret-recycling"]
+  ],
+  "entity":
+  [
+    ["tesla-tower", "tesla-turret"]
+  ]
+}

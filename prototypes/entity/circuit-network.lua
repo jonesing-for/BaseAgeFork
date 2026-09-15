@@ -53,3 +53,12 @@ circuit_connector_definitions["heating-tower"] = circuit_connector_definitions.c
   universal_connector_template,
   { variation = 30, main_offset = util.by_pixel(-12, 17), shadow_offset = util.by_pixel(10, 30), show_shadow = false }
 )
+circuit_connector_definitions["rocket-turret"] = circuit_connector_definitions.create_vector -- TurretPrototype takes vector
+(
+  universal_connector_template,
+  {
+    { variation = 17, main_offset = util.by_pixel( -18, 13), shadow_offset = util.by_pixel( -12, 25), show_shadow = false }
+  }
+)
+
+circuit_connector_definitions["tesla-turret"] = circuit_connector_definitions["rocket-turret"]

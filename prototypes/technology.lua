@@ -684,4 +684,40 @@ data:extend({
     max_level = 30,
     upgrade = true
   },
+  {
+    type = "technology",
+    name = "tesla-weapons",
+    icon = "__base-age-plus__/graphics/technology/tesla-weapons.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "teslagun",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tesla-turret",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tesla-ammo",
+      },
+    },
+    prerequisites = {"military-4"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+      },
+      time = 60
+    }
+  }
 })
