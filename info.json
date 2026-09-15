@@ -1,0 +1,11 @@
+{
+    "name": "base-age-plus",
+    "version": "1.0.0",
+    "title": "Base Age Plus",
+    "author": "tasty",
+    "factorio_version": "2.1",
+    "dependencies": ["!space-age", "?quality"],
+    "expansion_required": true,
+    "space_travel_required": true,
+    "description": "Adds even more a bunch of buildings, technology and equipment form Space Age to the base game. (Still requires Space Age to have been purchased.)"
+}
