@@ -7,6 +7,7 @@ end
 
 
 require ("base-data-updates")
+require ("prototypes.entity.beams")
 require ("prototypes.entity.big-mining-drill")
 require ("prototypes.entity.biolab")
 require ("prototypes.entity.circuit-network")
@@ -21,6 +22,7 @@ require ("prototypes.entity.remnants")
 require ("prototypes.entity.sounds")
 require ("prototypes.entity.stack-inserter")
 require ("prototypes.entity.transport-belts")
+require ("prototypes.entity.turrets")
 require ("prototypes.active-triggers")
 require ("prototypes.equipment")
 require ("prototypes.fluid")
