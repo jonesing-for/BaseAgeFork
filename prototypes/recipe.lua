@@ -549,7 +549,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "copper-plate", amount = 10},
-      {type = "item", name = "battery-mk2-equipment", amount = 5},
+      {type = "item", name = "battery-mk2-equipment", amount = 1},
       {type = "item", name = "plastic-bar", amount = 30},
 	    {type = "item", name = "steel-plate", amount = 10},
 	   -- {type = "fluid", name = "electrolyte", amount = 100},
@@ -565,7 +565,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "teslagun", amount = 1},
-	    {type = "item", name = "accumulator", amount = 10},
+	    {type = "item", name = "accumulator", amount = 5},
       --{type = "item", name = "supercapacitor", amount = 10},
       {type = "item", name = "processing-unit", amount = 10},
       --{type = "item", name = "superconductor", amount = 50},
@@ -583,7 +583,7 @@ data:extend({
     ingredients =
     {
       --{type = "item", name = "supercapacitor", amount = 1},
-	  {type = "item", name = "battery-equipment", amount = 10},
+	  {type = "item", name = "battery-equipment", amount = 1},
       {type = "item", name = "plastic-bar", amount = 1},
       --{type = "fluid", name = "electrolyte", amount = 10},
     },
