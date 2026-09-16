@@ -391,4 +391,108 @@ data:extend({
 		stack_size = 100,
 		magazine_size = 10
 	},	
+	{
+		type = "item",
+		name = "rocket-turret",
+		icon = "__base-age-plus__/graphics/icons/rocket-turret.png",
+		subgroup = "turret",
+		order = "b[turret]-e[rocket-turret]-a[turret]",
+		inventory_move_sound = item_sounds.turret_inventory_move,
+		pick_sound = item_sounds.turret_inventory_pickup,
+		drop_sound = item_sounds.turret_inventory_move,
+		place_result = "rocket-turret",
+		stack_size = 10,
+		weight = 100*kg
+	  },
+	  {
+		type = "gun",
+		name = "railgun",
+		icon = "__base-age-plus__/graphics/icons/railgun.png",
+		subgroup = "gun",
+		order = "a[basic-clips]-h[railgun]",
+		inventory_move_sound = item_sounds.weapon_large_inventory_move,
+		pick_sound = item_sounds.weapon_large_inventory_pickup,
+		drop_sound = item_sounds.weapon_large_inventory_move,
+		attack_parameters =
+		{
+		  type = "projectile",
+		  ammo_category = "railgun",
+		  cooldown = 120,
+		  movement_slow_down_factor = 0.5,
+		  shell_particle =
+		  {
+			name = "shell-particle",
+			direction_deviation = 0.1,
+			speed = 0.1,
+			speed_deviation = 0.03,
+			center = {0, 0.1},
+			creation_distance = -0.5,
+			starting_frame_speed = 0.4,
+			starting_frame_speed_deviation = 0.1
+		  },
+		  projectile_creation_distance = 1.125,
+		  range = 40,
+		  sound = sounds.railgun_gunshot
+		},
+		stack_size = 1
+	  },
+	  {
+		type = "item",
+		name = "railgun-turret",
+		icon = "__base-age-plus__/graphics/icons/railgun-turret.png",
+		subgroup = "turret",
+		order = "b[turret]-g[railgun-turret]-a[turret]",
+		inventory_move_sound = item_sounds.turret_inventory_move,
+		pick_sound = item_sounds.turret_inventory_pickup,
+		drop_sound = item_sounds.turret_inventory_move,
+		place_result = "railgun-turret",
+		stack_size = 10,
+		-- default_import_location = "aquilo",
+		weight = 1*tons,
+	  },
+	  {
+		type = "ammo",
+		name = "railgun-ammo",
+		icon = "__base-age-plus__/graphics/icons/railgun-ammo.png",
+		ammo_category = "railgun",
+		ammo_type =
+		{
+		  target_type = "direction",
+		  clamp_position = true,
+		  action =
+		  {
+			type = "line",
+			range = 50,
+			width = 1,
+			range_effects =
+			{
+			  type = "create-explosion",
+			  entity_name = "railgun-beam",
+			  only_when_visible = true
+			},
+			action_delivery =
+			{
+			  type = "instant",
+			  target_effects =
+			  {
+				type = "damage",
+				damage = {amount = 10000, type = "physical"}
+			  },
+			  source_effects =
+			  {
+				type = "create-explosion",
+				entity_name = "explosion-gunshot",
+				only_when_visible = true
+			  }
+			}
+		  }
+		},
+		subgroup = "ammo",
+		order = "e[railgun-ammo]-a[basic]",
+		inventory_move_sound = item_sounds.ammo_large_inventory_move,
+		pick_sound = item_sounds.ammo_large_inventory_pickup,
+		drop_sound = item_sounds.ammo_large_inventory_move,
+		stack_size = 10,
+		weight = 200*kg
+	  },
 })

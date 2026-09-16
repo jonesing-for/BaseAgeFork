@@ -1269,4 +1269,152 @@ data:extend({
       }
     }
   },
+  {
+    type = "explosion",
+    name = "rocket-turret-explosion",
+    icon = "__base-age-plus__/graphics/icons/rocket-turret.png",
+    flags = {"not-on-map"},
+    hidden = true,
+    subgroup = "defensive-structure-explosions",
+    order = "c-d-a",
+    height = 0,
+    animations = explosion_animations.medium_explosion(),
+    smoke = "smoke-fast",
+    smoke_count = 4,
+    smoke_slow_down_factor = 1,
+    sound = sounds.small_explosion,
+    created_effect =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "create-particle",
+            repeat_count = 22,
+            particle_name = "rocket-turret-metal-particle-big",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.1,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.04,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 25,
+            particle_name = "rocket-turret-metal-particle-medium",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.1,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.05,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 15,
+            particle_name = "rocket-turret-metal-particle-small",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.11,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.03,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 18,
+            particle_name = "cable-and-electronics-particle-small-medium",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.11,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.03,
+            speed_from_center_deviation = 0.05
+          }
+        }
+      }
+    }
+  },
+  {
+    type = "explosion",
+    name = "railgun-turret-explosion",
+    icon = "__base-age-plus__/graphics/icons/railgun-turret.png",
+    flags = {"not-on-map"},
+    hidden = true,
+    subgroup = "defensive-structure-explosions",
+    order = "c-d-i",
+    height = 0.6,
+    animations = explosion_animations.big_explosion(),
+    smoke = "smoke-fast",
+    smoke_count = 6,
+    smoke_slow_down_factor = 1,
+    sound = sounds.small_explosion,
+    created_effect =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "create-particle",
+            repeat_count = 32,
+            particle_name = "railgun-turret-metal-particle-big",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.1,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.04,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 40,
+            particle_name = "railgun-turret-metal-particle-medium",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.1,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.05,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 25,
+            particle_name = "railgun-turret-metal-particle-small",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.11,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.03,
+            speed_from_center_deviation = 0.05
+          },
+          {
+            type = "create-particle",
+            repeat_count = 18,
+            particle_name = "cable-and-electronics-particle-small-medium",
+            offset_deviation = { { -0.75, -0.75 }, { 0.75, 0.75 } },
+            initial_height = 0.6,
+            initial_height_deviation = 0.5,
+            initial_vertical_speed = 0.11,
+            initial_vertical_speed_deviation = 0.05,
+            speed_from_center = 0.03,
+            speed_from_center_deviation = 0.05
+          }
+        }
+      }
+    }
+  },
 })

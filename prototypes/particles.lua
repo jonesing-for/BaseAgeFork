@@ -353,4 +353,50 @@ data:extend({
 		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
 		render_layer = "object"
 	},
+	make_particle{
+		name = "railgun-turret-metal-particle-small",
+		pictures = particle_animations.get_metal_particle_small_pictures ({ tint = {0.490, 0.447, 0.416, 1}}),
+		shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+		regular_trigger_effect = nil,
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
+	},
+	make_particle{
+		name = "railgun-turret-metal-particle-medium",
+		pictures = particle_animations.get_metal_particle_medium_pictures  ({ tint = {0.800, 0.753, 0.694, 1}}),
+		shadows = particle_animations.get_metal_particle_medium_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+		regular_trigger_effect = small_smoke_trigger_effect(),
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+		ender_layer = "object"
+	},
+	make_particle{
+		name = "railgun-turret-metal-particle-big",
+		pictures = particle_animations.get_metal_particle_big_pictures ({ tint = {0.541, 0.494, 0.459, 1}}),
+		shadows = particle_animations.get_metal_particle_big_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+		regular_trigger_effect = default_smoke_trigger_effect(),
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+		render_layer = "object"
+	},
+	make_particle{
+		name = "rocket-turret-metal-particle-small",
+		pictures = particle_animations.get_metal_particle_small_pictures ({ tint = {0.490, 0.447, 0.416, 1}}),
+		shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+		regular_trigger_effect = nil,
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
+	},
+	make_particle{
+		name = "rocket-turret-metal-particle-medium",
+		pictures = particle_animations.get_metal_particle_medium_pictures  ({ tint = {0.800, 0.753, 0.694, 1}}),
+		shadows = particle_animations.get_metal_particle_medium_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+		regular_trigger_effect = small_smoke_trigger_effect(),
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+		ender_layer = "object"
+	},
+	make_particle{
+		name = "rocket-turret-metal-particle-big",
+		pictures = particle_animations.get_metal_particle_big_pictures ({ tint = {0.541, 0.494, 0.459, 1}}),
+		shadows = particle_animations.get_metal_particle_big_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+		regular_trigger_effect = default_smoke_trigger_effect(),
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+		render_layer = "object"
+	},
 })

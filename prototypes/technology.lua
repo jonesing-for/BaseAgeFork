@@ -719,5 +719,68 @@ data:extend({
       },
       time = 60
     }
-  }
+  },
+  {
+    type = "technology",
+    name = "rocket-turret",
+    icon = "__base-age-plus__/graphics/technology/rocket-turret.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "rocket-turret"
+      }
+    },
+    prerequisites = {"rocketry", "stronger-explosives-2"},
+    unit =
+    {
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"space-science-pack", 1},
+      },
+      time = 30,
+      count = 1500
+    }
+  },
+  {
+    type = "technology",
+    name = "railgun",
+    icon = "__base-age-plus__/graphics/technology/railgun.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "railgun"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "railgun-turret"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "railgun-ammo"
+      },
+    },
+    prerequisites = {"military-4", "tank", "concrete", "radar"},
+    unit =
+    {
+      count = 3000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+      },
+      time = 60
+    }
+  },
 })

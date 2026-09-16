@@ -186,6 +186,43 @@ sounds.electromagnetic_plant =
   max_sounds_per_prototype = 2
 }
 
+sounds.railgun_gunshot = sound_variations("__base-age-plus__/sound/entity/railgun/railgun-gunshot", 5, 0.8, volume_multiplier("main-menu", 0.9))
+sounds.railgun_turret_gunshot = sound_variations("__base-age-plus__/sound/entity/railgun-turret/railgun-turret-gunshot", 5, 0.55, volume_multiplier("main-menu", 0.9))
+sounds.railgun_turret_activate =
+{
+  variations = sound_variations("__base-age-plus__/sound/entity/railgun-turret/railgun-turret-activate", 1, 0.7),
+  aggregation = {max_count = 2, remove = true, count_already_playing = true},
+  advanced_volume_control =
+  {
+    fades = {fade_in = {curve_type = "S-curve", from = {control = 0.5, volume_percentage = 0.0}, to = {2, 100.0}}},
+  }
+}
+sounds.railgun_turret_deactivate =
+{
+  variations = sound_variations("__base-age-plus__/sound/entity/railgun-turret/railgun-turret-deactivate", 1, 0.7),
+  aggregation = {max_count = 2, remove = true, count_already_playing = true},
+  advanced_volume_control =
+  {
+    fades = {fade_in = {curve_type = "S-curve", from = {control = 0.5, volume_percentage = 0.0}, to = {2, 100.0}}},
+  }
+}
+sounds.railgun_turret_rotate =
+{
+  sound =
+  {
+    filename = "__base-age-plus__/sound/entity/railgun-turret/railgun-turret-rotation-loop.ogg", volume = 0.35,
+    aggregation = {max_count = 2, remove = true, count_already_playing = true},
+    advanced_volume_control =
+    {
+      fades = {fade_in = {curve_type = "S-curve", from = {control = 0.5, volume_percentage = 0.0 }, to = {1.5, 100.0}}},
+    }
+  },
+  minimal_change_per_tick = 0.001,
+  stopped_sound = {filename = "__base-age-plus__/sound/entity/railgun-turret/railgun-turret-rotation-stop.ogg", volume = 0.5},
+  minimal_sound_duration_for_stopped_sound = 5
+}
+
+
 sounds.tesla_turret_rotate =
 {
   sound =

@@ -590,4 +590,87 @@ data:extend({
     results = {{type="item", name="tesla-ammo", amount=1}},
     enabled = false
   },
+  {
+    type = "recipe",
+    name = "railgun",
+    categories = {"cryogenics"},
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+	  {type = "item", name = "battery-mk3-equipment", amount = 1},
+	  {type = "item", name = "steel-plate", amount = 100},
+	  {type = "item", name = "processing-unit", amount = 100},
+	  {type = "fluid", name = "water", amount = 10}
+      --{type = "item", name = "tungsten-plate", amount = 10},
+      --{type = "item", name = "superconductor", amount = 10},
+      --{type = "item", name = "quantum-processor", amount = 20},
+      --{type = "fluid", name = "fluoroketone-cold", amount = 10}
+    },
+    results = {{type="item", name="railgun", amount=1}},
+    crafting_machine_tint =
+    {
+      primary = {r = 0.504, g = 0.448, b = 0.321, a = 1.000}, -- #807251ff
+      secondary = {r = 0.312, g = 0.519, b = 0.601, a = 1.000}, -- #4f8499ff
+      tertiary = {r = 0.402, g = 0.558, b = 0.880, a = 1.000}, -- #668ee0ff
+      quaternary = {r = 0.246, g = 0.246, b = 0.246, a = 1.000}, -- #3e3e3eff
+    },
+    auto_recycle = true,
+  },
+  {
+    type = "recipe",
+    name = "railgun-turret",
+    categories = {"cryogenics"},
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+	  {type = "item", name = "battery-mk2-equipment", amount = 5},
+	  {type = "item", name = "steel-plate", amount = 400},
+	  {type = "item", name = "processing-unit", amount = 300},
+	  {type = "fluid", name = "water", amount = 100}
+      -- {type = "item", name = "quantum-processor", amount = 100},
+      -- {type = "item", name = "tungsten-plate", amount = 30},
+      -- {type = "item", name = "superconductor", amount = 50},
+      -- {type = "item", name = "carbon-fiber", amount = 20},
+      -- {type = "fluid", name = "fluoroketone-cold", amount = 100}
+    },
+    results = {{type="item", name="railgun-turret", amount=1}},
+    crafting_machine_tint =
+    {
+      primary = {r = 0.504, g = 0.448, b = 0.321, a = 1.000}, -- #807251ff
+      secondary = {r = 0.312, g = 0.519, b = 0.601, a = 1.000}, -- #4f8499ff
+      tertiary = {r = 0.402, g = 0.558, b = 0.880, a = 1.000}, -- #668ee0ff
+      quaternary = {r = 0.246, g = 0.246, b = 0.246, a = 1.000}, -- #3e3e3eff
+    },
+    auto_recycle = true,
+  },
+  {
+    type = "recipe",
+    name = "railgun-ammo",
+    enabled = false,
+    energy_required = 25,
+    ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 5},
+      {type = "item", name = "copper-cable", amount = 10},
+      {type = "item", name = "explosives", amount = 2}
+    },
+    results = {{type="item", name="railgun-ammo", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "rocket-turret",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "rocket-launcher", amount = 4},
+      {type = "item", name = "processing-unit", amount = 4},
+      --{type = "item", name = "carbon-fiber", amount = 20},
+      {type = "item", name = "steel-plate", amount = 20},
+      {type = "item", name = "iron-gear-wheel", amount = 20}
+    },
+    results = {{type="item", name="rocket-turret", amount=1}}
+  },
 })

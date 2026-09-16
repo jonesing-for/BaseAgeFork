@@ -8,6 +8,12 @@ data:extend(
     icon = "__base-age-plus__/graphics/icons/ammo-category/tesla.png",
     subgroup = "ammo-category"
   },
+  {
+    type = "ammo-category",
+    name = "railgun",
+    icon = "__base-age-plus__/graphics/icons/ammo-category/railgun.png",
+    subgroup = "ammo-category"
+  },
 }
 )
 

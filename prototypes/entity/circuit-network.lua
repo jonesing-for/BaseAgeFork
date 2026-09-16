@@ -62,3 +62,18 @@ circuit_connector_definitions["rocket-turret"] = circuit_connector_definitions.c
 )
 
 circuit_connector_definitions["tesla-turret"] = circuit_connector_definitions["rocket-turret"]
+
+circuit_connector_definitions["railgun-turret"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 0, main_offset = util.by_pixel(  1.5,  -5.5), shadow_offset = util.by_pixel( 51.5,  44.5), show_shadow = false },
+    { variation = 7, main_offset = util.by_pixel(  -30,   -22), shadow_offset = util.by_pixel(   20,    28), show_shadow = false },
+    { variation = 6, main_offset = util.by_pixel(  -43,   -43), shadow_offset = util.by_pixel(  -13,     7), show_shadow = false },
+    { variation = 5, main_offset = util.by_pixel(  -32, -68.5), shadow_offset = util.by_pixel(   18, -17.5), show_shadow = false },
+    { variation = 4, main_offset = util.by_pixel(   -1,   -69), shadow_offset = util.by_pixel(   49,   -19), show_shadow = false },
+    { variation = 3, main_offset = util.by_pixel(   27,   -65), shadow_offset = util.by_pixel(   66,   -15), show_shadow = false },
+    { variation = 2, main_offset = util.by_pixel(   46, -40.5), shadow_offset = util.by_pixel(   94,   9.5), show_shadow =  true },
+    { variation = 1, main_offset = util.by_pixel(   32,   -17), shadow_offset = util.by_pixel(   85,    28), show_shadow = false }
+  }
+)
