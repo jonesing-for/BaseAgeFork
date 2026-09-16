@@ -7,6 +7,7 @@ end
 
 
 require ("base-data-updates")
+require("prototypes.categories.ammo-category")
 require ("prototypes.entity.beams")
 require ("prototypes.entity.big-mining-drill")
 require ("prototypes.entity.biolab")
