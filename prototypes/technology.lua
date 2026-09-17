@@ -1,3 +1,7 @@
+local electric_weapons_damage_1_icon = "__base-age-plus__/graphics/technology/electric-weapons-damage.png"
+local electric_weapons_damage_2_icon = "__base-age-plus__/graphics/technology/electric-weapons-damage.png"
+local electric_weapons_damage_3_icon = "__base-age-plus__/graphics/technology/electric-weapons-damage.png"
+
 data:extend({
   {
     type = "technology",
@@ -722,6 +726,144 @@ data:extend({
   },
   {
     type = "technology",
+    name = "electric-weapons-damage-1",
+    icons = util.technology_icon_constant_damage(electric_weapons_damage_1_icon),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.3
+      }
+    },
+    prerequisites = {"destroyer"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "electric-weapons-damage-2",
+    icons = util.technology_icon_constant_damage(electric_weapons_damage_2_icon),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.4
+      }
+    },
+    prerequisites = {"electric-weapons-damage-1", "space-science-pack"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 60
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "electric-weapons-damage-3",
+    icons = util.technology_icon_constant_damage(electric_weapons_damage_3_icon),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "tesla",
+        modifier = 0.7
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.7
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.6
+      }
+    },
+    prerequisites = {"electric-weapons-damage-2",  "tesla-weapons"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 60
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "electric-weapons-damage-4",
+    icons = util.technology_icon_constant_damage(electric_weapons_damage_3_icon),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "tesla",
+        modifier = 0.7
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.7
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.3
+      }
+    },
+    prerequisites = {"electric-weapons-damage-3"},
+    unit =
+    {
+      count_formula = "2^(L-3)*1000",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  {
+    type = "technology",
     name = "rocket-turret",
     icon = "__base-age-plus__/graphics/technology/rocket-turret.png",
     icon_size = 256,
@@ -782,5 +924,69 @@ data:extend({
       },
       time = 60
     }
+  },
+  {
+    type = "technology",
+    name = "railgun-shooting-speed-1",
+    icons = util.technology_icon_constant_speed("__base-age-plus__/graphics/technology/railgun-shooting-speed.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "railgun",
+        icon = "__base-age-plus__/graphics/icons/railgun-ammo.png",
+        icon_size = 64,
+        modifier = 0.15
+      },
+    },
+    prerequisites = {"railgun"},
+    unit =
+    {
+      count_formula = "2^(L-1)*1000",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"cryogenic-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite"
+  },
+  {
+    type = "technology",
+    name = "railgun-damage-1",
+    icons = util.technology_icon_constant_damage("__base-age-plus__/graphics/technology/railgun-damage.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "railgun",
+        modifier = 0.4
+      }
+    },
+    prerequisites = {"railgun"},
+    unit =
+    {
+      count_formula = "2^(L-1)*1000",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite"
   },
 })
