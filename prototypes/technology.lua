@@ -1030,4 +1030,33 @@ data:extend({
       },
     }
   },
+  {
+    type = "technology",
+    name = "captive-biter-spawner",
+    icon = "__space-age__/graphics/technology/captive-biter-spawner.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "captive-biter-spawner"
+      }
+    },
+    prerequisites = {"cryogenic-science-pack", "biter-egg-handling", "kovarex-enrichment-process"},
+    unit =
+    {
+      count = 3000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+      },
+      time = 60
+    }
+  },
 })
