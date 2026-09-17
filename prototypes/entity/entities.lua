@@ -105,6 +105,11 @@ data:extend({
     crafting_speed = 1,
     energy_source =
     {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = { pollution = -0.01 }
+    },
+    --[[ {
       type = "burner",
       fuel_categories = {"food"},
       effectivity = 1,
@@ -122,7 +127,7 @@ data:extend({
         light_intensity_to_size_coefficient = 0,
         color = {0, 0, 0, 1}
       }
-    },
+    }, ]]
     energy_usage = "100kW",
     module_slots = 0,
     allowed_effects = {}

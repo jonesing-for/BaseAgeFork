@@ -1042,7 +1042,7 @@ data:extend({
         recipe = "captive-biter-spawner"
       }
     },
-    prerequisites = {"cryogenic-science-pack", "biter-egg-handling", "kovarex-enrichment-process"},
+    prerequisites = {"biter-egg-handling", "kovarex-enrichment-process"},
     unit =
     {
       count = 3000,

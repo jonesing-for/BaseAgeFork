@@ -687,4 +687,40 @@ data:extend({
     results = {{type="item", name="capture-robot-rocket", amount=1}},
     enabled = false
   },
+  {
+    type = "recipe",
+    name = "captive-biter-spawner",
+    categories = {"cryogenics"},
+    energy_required = 10,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "biter-egg", amount = 10},
+      {type = "item", name = "capture-robot-rocket", amount = 1},
+      {type = "item", name = "uranium-235", amount = 15},
+      {type = "fluid", name = "light-oil", amount = 100},
+    },
+    results =
+    {
+      {type = "item", name = "captive-biter-spawner", amount = 1, reset_freshness_on_craft = true}
+    },
+    auto_recycle = false,
+  },
+  {
+    type = "recipe",
+    name = "biter-egg",
+    icon = "__base-age-plus__/graphics/icons/biter-egg.png",
+    categories = {"captive-spawner-process"},
+    order = "c[eggs]-a[biter-egg]",
+    hide_from_player_crafting = true,
+    auto_recycle = false,
+    preserve_products_in_machine_output = true,
+    energy_required = 10,
+    ingredients = {},
+    results =
+    {
+      {type = "item", name = "biter-egg", amount = 5}
+    },
+    enabled = false
+  },
 })

@@ -27,7 +27,7 @@ add_recipe_category(data.raw.recipe["productivity-module-3"], "electromagnetics"
 add_recipe_category(data.raw.recipe["efficiency-module"], "electromagnetics")
 add_recipe_category(data.raw.recipe["efficiency-module-2"], "electromagnetics")
 add_recipe_category(data.raw.recipe["efficiency-module-3"], "electromagnetics")
-table.insert(data.raw.recipe["productivity-module-3"].ingredients, {type = "item", name = "biter-egg", amount = 1})
+table.insert(data.raw.recipe["efficiency-module-3"].ingredients, {type = "item", name = "biter-egg", amount = 1})
 
 add_recipe_category(data.raw.recipe["quality-module"], "electromagnetics")
 add_recipe_category(data.raw.recipe["quality-module-2"], "electromagnetics")
