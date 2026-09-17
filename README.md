@@ -16,10 +16,6 @@ Railgun ammo
 
 Rocket turret
 
-Capture Robot Rocket
-
-Captive Biter Spawner
-
 
 
 Intend to make small balance changes later
