@@ -2,6 +2,8 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local space_age_sounds = require("__base-age-plus__.prototypes.entity.sounds")
 local item_sounds = require("__base__.prototypes.item_sounds")
 local smoke_animations = require("__base__.prototypes.entity.smoke-animations")
+local space_age_item_sounds = require("__base-age-plus__.prototypes.item_sounds")
+
 
 data:extend({
 	{
@@ -527,7 +529,7 @@ data:extend({
 	  {
 		type = "item",
 		name = "captive-biter-spawner",
-		icon = "__space-age__/graphics/icons/captive-biter-spawner.png",
+		icon = "__base-age-plus__/graphics/icons/captive-biter-spawner.png",
 		subgroup = "agriculture",
 		order = "z[biter-nest]",
 		inventory_move_sound = item_sounds.mechanical_inventory_move,
@@ -535,7 +537,7 @@ data:extend({
 		drop_sound = item_sounds.mechanical_inventory_move,
 		place_result = "captive-biter-spawner",
 		stack_size = 1,
-		spoil_ticks = 30 * minute,
+		--[[ spoil_ticks = 30 * minute, ]]
 		--[[ spoil_to_trigger_result =
 		{
 		  items_per_trigger = 1,
@@ -584,13 +586,13 @@ data:extend({
 	  {
 		type = "item",
 		name = "biter-egg",
-		icon = "__space-age__/graphics/icons/biter-egg.png",
+		icon = "__base-age-plus__/graphics/icons/biter-egg.png",
 		pictures =
 		{
-		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg.png", scale = 0.5, mipmap_count = 4 },
-		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg-1.png", scale = 0.5, mipmap_count = 4 },
-		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg-2.png", scale = 0.5, mipmap_count = 4 },
-		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg-3.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__base-age-plus__/graphics/icons/biter-egg.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__base-age-plus__/graphics/icons/biter-egg-1.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__base-age-plus__/graphics/icons/biter-egg-2.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__base-age-plus__/graphics/icons/biter-egg-3.png", scale = 0.5, mipmap_count = 4 },
 		},
 		fuel_category = "chemical",
 		fuel_value = "6MJ",

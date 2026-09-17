@@ -1033,7 +1033,7 @@ data:extend({
   {
     type = "technology",
     name = "captive-biter-spawner",
-    icon = "__space-age__/graphics/technology/captive-biter-spawner.png",
+    icon = "__base-age-plus__/graphics/technology/captive-biter-spawner.png",
     icon_size = 256,
     effects =
     {

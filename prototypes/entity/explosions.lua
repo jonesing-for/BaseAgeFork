@@ -1521,7 +1521,7 @@ data:extend({
   {
     type = "explosion",
     name = "captive-spawner-explosion-1",
-    icon = "__space-age__/graphics/icons/captive-biter-spawner.png",
+    icon = "__base-age-plus__/graphics/icons/captive-biter-spawner.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "agriculture-explosions",
@@ -1530,7 +1530,7 @@ data:extend({
     smoke = "smoke-fast",
     smoke_count = 2,
     smoke_slow_down_factor = 1,
-    animations = util.sprite_load("__space-age__/graphics/entity/captive-spawner/captive-explosion-1",
+    animations = util.sprite_load("__base-age-plus__/graphics/entity/captive-spawner/captive-explosion-1",
     {
       animation_speed = 0.3,
       scale = 0.5,
@@ -1665,7 +1665,7 @@ data:extend({
   {
     type = "explosion",
     name = "captive-spawner-explosion-2",
-    icon = "__space-age__/graphics/icons/captive-biter-spawner.png",
+    icon = "__base-age-plus__/graphics/icons/captive-biter-spawner.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "agriculture-explosions",
@@ -1674,7 +1674,7 @@ data:extend({
     smoke = "smoke-fast",
     smoke_count = 1,
     smoke_slow_down_factor = 1,
-    animations = util.sprite_load("__space-age__/graphics/entity/captive-spawner/captive-explosion-2",
+    animations = util.sprite_load("__base-age-plus__/graphics/entity/captive-spawner/captive-explosion-2",
     {
       animation_speed = 0.3,
       scale = 0.5,

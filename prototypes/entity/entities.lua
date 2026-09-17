@@ -1,18 +1,16 @@
 require ("sound-util")
 require ("circuit-connector-sprites")
 require ("util")
-require ("__space-age__.prototypes.entity.circuit-network")
-require ("__space-age__.prototypes.entity.space-platform-hub-cockpit")
+require ("__base-age-plus__.prototypes.entity.circuit-network")
 
 
 local sounds = require("__base__.prototypes.entity.sounds")
-local biochamber_pictures = require("__space-age__.prototypes.entity.biochamber-pictures")
 
 data:extend({
   {
     type = "assembling-machine",
     name = "captive-biter-spawner",
-    icon = "__space-age__/graphics/icons/captive-biter-spawner.png",
+    icon = "__base-age-plus__/graphics/icons/captive-biter-spawner.png",
     subgroup = "agriculture",
     flags = {"placeable-neutral", "placeable-player", "player-creation", "not-repairable", "not-deconstructable", "no-logistic-connection"},
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
@@ -66,12 +64,12 @@ data:extend({
     {
       animation = {
         layers = {
-          util.sprite_load("__space-age__/graphics/entity/captive-spawner/captive-anim",{
+          util.sprite_load("__base-age-plus__/graphics/entity/captive-spawner/captive-anim",{
             frame_count = 32,
             scale = 0.5,
             animation_speed = 0.4,
           }),
-          util.sprite_load("__space-age__/graphics/entity/captive-spawner/captive-shadow",{
+          util.sprite_load("__base-age-plus__/graphics/entity/captive-spawner/captive-shadow",{
             frame_count = 32,
             scale = 0.5,
             animation_speed = 0.4,
@@ -82,7 +80,7 @@ data:extend({
       working_visualisations = {
         {
           fadeout = true,
-          animation = util.sprite_load("__space-age__/graphics/entity/captive-spawner/captive-fluids",{
+          animation = util.sprite_load("__base-age-plus__/graphics/entity/captive-spawner/captive-fluids",{
             frame_count = 32,
             scale = 0.5,
             tint = {0.25,0.44,0,1},
@@ -98,8 +96,8 @@ data:extend({
       sound = {category = "enemy", filename = "__base__/sound/creatures/spawner.ogg", volume = 0.6 },
       sound_accents =
       {
-        {sound = {variations = sound_variations("__space-age__/sound/entity/spawner/spawner-respirator-push", 3, 0.3), audible_distance_modifier = 0.6}, frame = 1},
-        {sound = {variations = sound_variations("__space-age__/sound/entity/spawner/spawner-respirator-pull", 3, 0.3), audible_distance_modifier = 0.6}, frame = 17},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/spawner/spawner-respirator-push", 3, 0.3), audible_distance_modifier = 0.6}, frame = 1},
+        {sound = {variations = sound_variations("__base-age-plus__/sound/entity/spawner/spawner-respirator-pull", 3, 0.3), audible_distance_modifier = 0.6}, frame = 17},
       },
     },
     crafting_categories = {"captive-spawner-process"},
