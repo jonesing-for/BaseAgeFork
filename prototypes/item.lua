@@ -1,4 +1,5 @@
 local sounds = require("__base__.prototypes.entity.sounds")
+local space_age_sounds = require("__base-age-plus__.prototypes.entity.sounds")
 local item_sounds = require("__base__.prototypes.item_sounds")
 local smoke_animations = require("__base__.prototypes.entity.smoke-animations")
 
@@ -432,7 +433,7 @@ data:extend({
 		  },
 		  projectile_creation_distance = 1.125,
 		  range = 40,
-		  sound = sounds.railgun_gunshot
+		  sound = space_age_sounds.railgun_gunshot
 		},
 		stack_size = 1
 	  },
@@ -447,7 +448,7 @@ data:extend({
 		drop_sound = item_sounds.turret_inventory_move,
 		place_result = "railgun-turret",
 		stack_size = 10,
-		-- default_import_location = "aquilo",
+		--[[ default_import_location = "aquilo", ]]
 		weight = 1*tons,
 	  },
 	  {

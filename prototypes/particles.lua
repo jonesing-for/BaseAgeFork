@@ -1,4 +1,6 @@
 local sounds = require("__base__.prototypes.entity.sounds")
+local particle_animations = require("__base__/prototypes/particle-animations")
+
 local default_ended_in_water_trigger_effect = function()
 	return {
 		{
@@ -59,6 +61,27 @@ local default_ended_in_water_trigger_effect = function()
 	}
 end
 
+
+
+particle_animations.get_railgun_shell_particle = function(options)
+	local options = options or {}
+	return
+	{
+	  sheet =
+	  {
+		filename = "__base-age-plus__/graphics/particle/railgun-shell-particle/railgun-shell.png",
+		width = 42,
+		height = 40,
+		shift = util.by_pixel( 1.0, -1.5),
+		line_length = 12,
+		frame_count = 12,
+		variation_count = 4,
+		animation_speed = 1,
+		scale = 0.5
+	  }
+	}
+  end
+
 local make_particle = function(params)
 	if not params then
 		error("No params given to make_particle function")
@@ -100,7 +123,7 @@ local make_particle = function(params)
 	return particle
 end
 
-local particle_animations = require("__base__/prototypes/particle-animations")
+
 
 local small_smoke_trigger_effect = function()
 	return {
@@ -352,6 +375,15 @@ data:extend({
 		regular_trigger_effect = default_smoke_trigger_effect(),
 		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
 		render_layer = "object"
+	},
+	make_particle{
+		name = "railgun-shell-particle",
+		pictures = particle_animations.get_railgun_shell_particle({}),
+		shadows = particle_animations.get_railgun_shell_particle({ tint = shadowtint(), shift = util.by_pixel (2.5,-0.25)}),
+		regular_trigger_effect = small_smoke_trigger_effect(),
+		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+		movement_modifier_when_on_ground = 0.85,
+		render_layer_when_on_ground = "lower-object-above-shadow"
 	},
 	make_particle{
 		name = "railgun-turret-metal-particle-small",

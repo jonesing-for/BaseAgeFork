@@ -1345,6 +1345,33 @@ data:extend({
   },
   {
     type = "explosion",
+    name = "railgun-beam",
+    localised_name = {"entity-name.railgun-beam"},
+    flags = {"not-on-map"},
+    hidden = true,
+    subgroup = "explosions",
+    rotate = true,
+    beam = true,
+    animations =
+    {
+      {
+        filename = "__base-age-plus__/graphics/entity/railgun-turret/railgun-beam.png",
+        priority = "extra-high",
+        width = 64,
+        height = 440,
+        frame_count = 16,
+        animation_speed = 1,
+        draw_as_glow = true,
+        blend_mode = "additive"
+      }
+    },
+    light = {intensity = 2, size = 20, color = {r = 0.55, g = 0.9, b = 0.9}},
+    smoke = "smoke-fast",
+    smoke_count = 2,
+    smoke_slow_down_factor = 1
+  },
+  {
+    type = "explosion",
     name = "railgun-turret-explosion",
     icon = "__base-age-plus__/graphics/icons/railgun-turret.png",
     flags = {"not-on-map"},

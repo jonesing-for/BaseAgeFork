@@ -18,19 +18,19 @@ local function railgun_turret_base_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-base",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-base",
       {
         frame_index = inputs.frame_index,
         scale = 0.5
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-base-mask",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-base-mask",
       {
         flags = {"mask"},
         apply_runtime_tint = true,
         frame_index = inputs.frame_index,
         scale = 0.5
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-base-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-base-shadow",
       {
         frame_index = inputs.frame_index,
         draw_as_shadow = true,
@@ -59,7 +59,7 @@ local function railgun_turret_extension_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-rising-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-rising-"..inputs.direction,
       {
         run_mode = inputs.run_mode or nil,
         line_length = 1,
@@ -68,7 +68,7 @@ local function railgun_turret_extension_direction(inputs)
         direction_count = 1,
         scale = 0.5
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-rising-"..inputs.direction.."-mask",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-rising-"..inputs.direction.."-mask",
       {
         run_mode = inputs.run_mode or nil,
         flags = {"mask"},
@@ -79,7 +79,7 @@ local function railgun_turret_extension_direction(inputs)
         direction_count = 1,
         scale = 0.5
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
       {
         direction_count = 1,
         line_length = 5,
@@ -87,7 +87,7 @@ local function railgun_turret_extension_direction(inputs)
         repeat_count = 1,
         scale = 0.5
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
       {
         direction_count = 1,
         frame_index = 9,
@@ -98,7 +98,7 @@ local function railgun_turret_extension_direction(inputs)
         frame_count = 1,
         repeat_count = 1
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-rising-"..inputs.direction.."-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-rising-"..inputs.direction.."-shadow",
       {
         run_mode = inputs.run_mode or "forward",
         frame_count = 1,
@@ -137,7 +137,7 @@ local function railgun_turret_aiming_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -147,7 +147,7 @@ local function railgun_turret_aiming_direction(inputs)
         line_length = 1,
         frame_count = 1
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -158,7 +158,7 @@ local function railgun_turret_aiming_direction(inputs)
         line_length = 1,
         frame_count = 1
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -168,7 +168,7 @@ local function railgun_turret_aiming_direction(inputs)
         line_length = 1,
         frame_count = 1
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -180,7 +180,7 @@ local function railgun_turret_aiming_direction(inputs)
         frame_count = 1,
         repeat_count = 1
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -215,7 +215,7 @@ local function railgun_turret_shooting_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -226,7 +226,7 @@ local function railgun_turret_shooting_direction(inputs)
         frame_count = 1,
         repeat_count = 2
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -238,7 +238,7 @@ local function railgun_turret_shooting_direction(inputs)
         frame_count = 1,
         repeat_count = 2
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -249,7 +249,7 @@ local function railgun_turret_shooting_direction(inputs)
         frame_count = 1,
         repeat_count = 2
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -261,7 +261,7 @@ local function railgun_turret_shooting_direction(inputs)
         frame_count = 1,
         repeat_count = 2
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -297,7 +297,7 @@ local function railgun_turret_cooldown_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -308,7 +308,7 @@ local function railgun_turret_cooldown_direction(inputs)
         frame_count = 1,
         repeat_count = 5,
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -320,7 +320,7 @@ local function railgun_turret_cooldown_direction(inputs)
         frame_count = 1,
         repeat_count = 5,
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -331,7 +331,7 @@ local function railgun_turret_cooldown_direction(inputs)
         frame_count = 1,
         repeat_count = 5,
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -342,7 +342,7 @@ local function railgun_turret_cooldown_direction(inputs)
         frame_count = 5,
         repeat_count = 1
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -354,7 +354,7 @@ local function railgun_turret_cooldown_direction(inputs)
         frame_count = 1,
         repeat_count = 5
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -387,7 +387,7 @@ local function railgun_turret_warmup_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction,
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -398,7 +398,7 @@ local function railgun_turret_warmup_direction(inputs)
         frame_count = 1,
         repeat_count = 10,
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-mask",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -410,7 +410,7 @@ local function railgun_turret_warmup_direction(inputs)
         frame_count = 1,
         repeat_count = 10,
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-ammo-"..inputs.direction,
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -421,7 +421,7 @@ local function railgun_turret_warmup_direction(inputs)
         frame_count = 1,
         repeat_count = 10
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-EMIT",
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
@@ -433,7 +433,7 @@ local function railgun_turret_warmup_direction(inputs)
         frame_count = 1,
         repeat_count = 10
       }),
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-shadow",
       {
         middle_orientation = middle_orientation,
         orientation_range = orientation_range,
@@ -466,7 +466,7 @@ local function railgun_turret_resource_indicator_direction(inputs)
   {
     layers =
     {
-      util.sprite_load("__based-age__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-LED",
+      util.sprite_load("__base-age-plus__/graphics/entity/railgun-turret/railgun-turret-shooting-"..inputs.direction.."-LED",
       {
         direction_count = direction_count,
         middle_orientation = middle_orientation,
