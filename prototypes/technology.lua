@@ -983,4 +983,51 @@ data:extend({
     },
     max_level = "infinite"
   },
+  {
+    type = "technology",
+    name = "captivity",
+    icon = "__base-age-plus__/graphics/technology/captivity.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "capture-robot-rocket"
+      }
+    },
+    prerequisites = {"military-3", "rocketry"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"space-science-pack", 1},
+--[[         {"agricultural-science-pack", 1} ]]
+
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "biter-egg-handling",
+    icon = "__base-age-plus__/graphics/technology/biter-egg-handling.png",
+    icon_size = 256,
+    prerequisites = {"captivity"},
+    research_trigger =
+    {
+      type = "capture-spawner"
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "biter-egg"
+      },
+    }
+  },
 })

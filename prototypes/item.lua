@@ -448,7 +448,6 @@ data:extend({
 		drop_sound = item_sounds.turret_inventory_move,
 		place_result = "railgun-turret",
 		stack_size = 10,
-		--[[ default_import_location = "aquilo", ]]
 		weight = 1*tons,
 	  },
 	  {
@@ -495,5 +494,158 @@ data:extend({
 		drop_sound = item_sounds.ammo_large_inventory_move,
 		stack_size = 10,
 		weight = 200*kg
+	  },
+	  {
+		type = "ammo",
+		name = "capture-robot-rocket",
+		icon = "__base-age-plus__/graphics/icons/capture-bot.png",
+		flags = {"hide-from-bonus-gui"},
+		ammo_category = "rocket",
+		ammo_type =
+		{
+		  action =
+		  {
+			type = "direct",
+			action_delivery =
+			{
+			  type = "projectile",
+			  projectile = "capture-robot-rocket",
+			  starting_speed = 0.1
+			}
+		  },
+		  target_filter = {"biter-spawner", "spitter-spawner"}
+		},
+		subgroup = "ammo",
+		order = "d[rocket-launcher]-d[capture]",
+		inventory_move_sound = item_sounds.robotic_inventory_move,
+		pick_sound = item_sounds.robotic_inventory_pickup,
+		drop_sound = item_sounds.robotic_inventory_move,
+		stack_size = 10,
+		weight = 100 * kg,
+		shoot_protected = true
+	  },
+	  {
+		type = "item",
+		name = "captive-biter-spawner",
+		icon = "__space-age__/graphics/icons/captive-biter-spawner.png",
+		subgroup = "agriculture",
+		order = "z[biter-nest]",
+		inventory_move_sound = item_sounds.mechanical_inventory_move,
+		pick_sound = item_sounds.mechanical_inventory_pickup,
+		drop_sound = item_sounds.mechanical_inventory_move,
+		place_result = "captive-biter-spawner",
+		stack_size = 1,
+		spoil_ticks = 30 * minute,
+		--[[ spoil_to_trigger_result =
+		{
+		  items_per_trigger = 1,
+		  trigger =
+		  {
+			type = "direct",
+			action_delivery =
+			{
+			  type = "instant",
+			  source_effects =
+			  {
+				{
+				  type = "create-entity",
+				  entity_name = "behemoth-biter",
+				  affects_target = true,
+				  show_in_tooltip = true,
+				  show_details_in_tooltip = false,
+				  as_enemy = true,
+				  find_non_colliding_position = true,
+				  offset_deviation = {{-1, -1}, {1, 1}},
+				  non_colliding_fail_result =
+				  {
+					type = "direct",
+					action_delivery =
+					{
+					  type = "instant",
+					  source_effects =
+					  {
+						{
+						  type = "create-entity",
+						  entity_name = "behemoth-biter",
+						  affects_target = true,
+						  show_in_tooltip = false,
+						  as_enemy = true,
+						  offset_deviation = {{-1, -1}, {1, 1}},
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		} ]]
+	  },
+	  {
+		type = "item",
+		name = "biter-egg",
+		icon = "__space-age__/graphics/icons/biter-egg.png",
+		pictures =
+		{
+		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg-1.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg-2.png", scale = 0.5, mipmap_count = 4 },
+		  { size = 64, filename = "__space-age__/graphics/icons/biter-egg-3.png", scale = 0.5, mipmap_count = 4 },
+		},
+		fuel_category = "chemical",
+		fuel_value = "6MJ",
+		subgroup = "agriculture-products",
+		order = "c[eggs]-a[biter-egg]",
+		inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+		pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+		drop_sound = space_age_item_sounds.agriculture_inventory_move,
+		stack_size = 100,
+		weight = 2 * kg,
+		--[[ spoil_ticks = 0.5 * hour,
+		spoil_to_trigger_result =
+		{
+		  items_per_trigger = 25,
+		  trigger =
+		  {
+			type = "direct",
+			action_delivery =
+			{
+			  type = "instant",
+			  source_effects =
+			  {
+				{
+				  type = "create-entity",
+				  entity_name = "big-biter",
+				  affects_target = true,
+				  show_in_tooltip = true,
+				  show_details_in_tooltip = false,
+				  as_enemy = true,
+				  find_non_colliding_position = true,
+				  abort_if_over_space = true,
+				  offset_deviation = {{-1, -1}, {1, 1}},
+				  non_colliding_fail_result =
+				  {
+					type = "direct",
+					action_delivery =
+					{
+					  type = "instant",
+					  source_effects =
+					  {
+						{
+						  type = "create-entity",
+						  entity_name = "big-biter",
+						  affects_target = true,
+						  show_in_tooltip = false,
+						  as_enemy = true,
+						  offset_deviation = {{-1, -1}, {1, 1}},
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		} ]]
 	  },
 })
