@@ -77,3 +77,9 @@ circuit_connector_definitions["railgun-turret"] = circuit_connector_definitions.
     { variation = 1, main_offset = util.by_pixel(   32,   -17), shadow_offset = util.by_pixel(   85,    28), show_shadow = false }
   }
 )
+
+circuit_connector_definitions["agricultural-tower"] = circuit_connector_definitions.create_single
+(
+  universal_connector_template,
+  { variation = 30, main_offset = util.by_pixel(-7, 12), shadow_offset = util.by_pixel(-7, 12), show_shadow = true }
+)

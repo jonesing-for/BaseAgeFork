@@ -723,4 +723,38 @@ data:extend({
     },
     enabled = false
   },
+  {
+    type = "recipe",
+    name = "agricultural-tower",
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "electronic-circuit", amount = 3},
+      {type = "item", name = "landfill", amount = 1}
+    },
+    results = {{type="item", name="agricultural-tower", amount=1}},
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "tree-seed",
+    categories = {"organic", "crafting"},
+    subgroup = "nauvis-agriculture",
+    order = "a[seeds]-a[tree-seed]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {{type = "item", name = "wood", amount = 2}},
+    results =
+    {
+      {type = "item", name = "tree-seed", amount = 1},
+    },
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+      secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+    }
+  }
 })

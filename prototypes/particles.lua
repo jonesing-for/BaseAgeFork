@@ -61,6 +61,61 @@ local default_ended_in_water_trigger_effect = function()
 	}
 end
 
+local particle_ended_in_water_trigger_effect = function()
+	return
+	{
+	  type = "create-particle",
+	  repeat_count = 5,
+	  repeat_count_deviation = 4,
+	  probability = 0.05,
+	  affects_target = false,
+	  show_in_tooltip = false,
+	  particle_name = "tintable-water-particle",
+	  apply_tile_tint = "secondary",
+	  offsets = { { 0, 0 } },
+	  offset_deviation = { { -0.2969, -0.2969 }, { 0.2969, 0.2969 } },
+	  tile_collision_mask = nil,
+	  initial_height = 0.1,
+	  initial_height_deviation = 0.5,
+	  initial_vertical_speed = 0.06,
+	  initial_vertical_speed_deviation = 0.069,
+	  speed_from_center = 0.02,
+	  speed_from_center_deviation = 0.05,
+	  frame_speed = 1,
+	  frame_speed_deviation = 0,
+	  tail_length = 9,
+	  tail_length_deviation = 8,
+	  tail_width = 1,
+	  only_when_visible = true
+	}
+  end
+
+local gleba_tree_red_sap_trigger_effect = function()
+	return
+	{
+	  {
+		type = "create-particle",
+		probability = 0.5,
+		affects_target = false,
+		show_in_tooltip = false,
+		particle_name = "gleba-tree-sap-particle-trigger-red",
+		offset_deviation = { { -0.02, -0.02 }, { 0.02, 0.02 } },
+		initial_height = 0,
+		initial_height_deviation = 0.01,
+		initial_vertical_speed = 0,
+		initial_vertical_speed_deviation = 0.00,
+		speed_from_center = 0.01,
+		speed_from_center_deviation = 0.02,
+		frame_speed = 1,
+		frame_speed_deviation = 0,
+		tail_length = 2,
+		tail_length_deviation = 1,
+		tail_width = 4,
+		only_when_visible = true
+	  }
+	}
+  end
+
 
 
 particle_animations.get_railgun_shell_particle = function(options)
@@ -430,5 +485,37 @@ data:extend({
 		regular_trigger_effect = default_smoke_trigger_effect(),
 		ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
 		render_layer = "object"
+	},
+	make_particle
+    {
+		name = "yumako-leaf-particle",
+		life_time = 120,
+		pictures = particle_animations.get_gleba_tree_crop_particle_pictures({tint = {0.8235, 0.3373, 0.2627, 1.0}, tint_as_overlay = true, scale = 0.7}),
+		shadows = particle_animations.get_gleba_tree_crop_particle_pictures({ tint = shadowtint(),scale = 0.8, shift = util.by_pixel (1,0), scale = 0.7}),
+		regular_trigger_effect_frequency = 6,
+		regular_trigger_effect = gleba_tree_red_sap_trigger_effect(),
+		ended_in_water_trigger_effect = particle_ended_in_water_trigger_effect(),
+		render_layer_when_on_ground = "lower-object-above-shadow"
+    },
+	make_particle
+	{
+	  name = "yumako-branch-particle",
+	  life_time = 120,
+	  pictures = particle_animations.get_gleba_tree_wooden_particle_pictures({tint = {0.6039, 0.4314, 0.2157, 1.0}, tint_as_overlay = true}),
+	  shadows = particle_animations.get_gleba_tree_wooden_particle_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+	  regular_trigger_effect = nil,
+	  ended_in_water_trigger_effect = particle_ended_in_water_trigger_effect(),
+	  render_layer_when_on_ground = "lower-object-above-shadow"
+	},
+	make_particle
+	{
+		name = "gleba-tree-sap-particle-trigger-red",
+		life_time = 60,
+		pictures = particle_animations.get_gleba_tree_sap_particle_pictures({tint = {0.4196, 0.1412, 0.1216, 1.0}, tint_as_overlay = true, scale = 0.8}),
+		shadows = particle_animations.get_gleba_tree_sap_particle_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0), scale = 0.8}),
+		draw_shadow_when_on_ground = false,
+		ended_in_water_trigger_effect = particle_ended_in_water_trigger_effect(),
+		movement_modifier_when_on_ground = 0,
+		render_layer = "higher-object-under"
 	},
 })

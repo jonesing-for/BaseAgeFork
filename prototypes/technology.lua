@@ -1059,4 +1059,54 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "agriculture",
+    icon = "__base-age-plus__/graphics/technology/agriculture.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "agricultural-tower"
+      },
+    },
+    prerequisites = {"chemical-science-pack"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "tree-seeding",
+    icon = "__base-age-plus__/graphics/technology/tree-seeding.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "tree-seed"
+      }
+    },
+    prerequisites = {"agriculture"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack",   1},
+        {"logistic-science-pack",     1},
+        {"chemical-science-pack",     1},
+      },
+      time = 60
+    }
+  },
 })
